@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+    
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/index.main.css" />
+		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+	</head>
+
+	<body>
+	<header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">基本资料</h1>
+    </header>
+
+	<div class="mui-content">
+		<div id="tabbar-view-user" class="mui-control-content mui-active">
+            <div class="user-header-view">
+                <div class="user-topv">
+                    <div class="user-img"><img src="images/main.png" alt=""></div>
+                    <div class="user-longin">张三三</div>
+                    <p>A驿站</p>
+                </div>
+            </div>
+            
+            <!--进行中模块-->
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
+                        <tr><td>工作编号：1007030531</td></tr>
+                        <tr><td>出生日期:  1992-08-21</td></tr>
+                        <tr><td>籍贯：  湖南</td></tr>
+                        <tr><td>入职时间：  2015-08-21</td></tr>
+                        <tr><td>在职类型：  全职</td></tr>
+                        <tr><td>联系电话：  18752451241</td></tr>
+                        <tr><td>身份证号：  430421******7892211</td></tr>
+                        <tr><td>现居地址：  福建省泉州市刺桐路116号</td></tr>
+                        </table>   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<!--<script src="js/mui.picker.js"></script>
+	<script src="js/mui.dtpicker.js"></script>-->
+	<script src="js/mui.picker.min.js"></script>
+	<script>
+        mui.init({
+            swipeBack: false
+        });
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+
+        (function($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: true, //是否显示滚动条
+                swipeBack: false //启用右滑关闭功能
+            });
+            var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+            var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+            var item2 = document.getElementById('item2mobile');
+            var item3 = document.getElementById('item3mobile');
+            var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+            $('.mui-input-group').on('change', 'input', function() {
+                if (this.checked) {
+                    sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                    //force repaint
+                    sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+                }
+            });
+
+            /*幻灯片js动画效果*/
+            var slider = mui("#qyslider");
+            slider.slider({
+                interval: 500
+            });
+
+        })(mui);
+    </script>
+	</body>
+
+</html>

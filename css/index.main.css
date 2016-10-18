@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*顶部颜色*/
+.headerBar{background-color: #feaa36;}
+
+/*底部颜色*/
+.footerBar{background-color: #f6f6f6;}
+
+/*按钮白色*/
+.btn-color-w{color: white;}
+
+/*间隔模块*/
+.cell-interval{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
+.cell-in{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
+/*绘制线条*/
+.lc-line-t{border-top: #e0e5e6 solid 1px;}
+.lc-line-b{border-bottom: #e0e5e6 solid 1px;}
+
+/*浮动*/
+.fl{float: left}
+.fr{float: right}
+
+/*首页－顶部三个菜单视图样式*/
+.mui-control-content {background-color: white;}
+.mui-control-content .mui-loading { margin-top: 150px;}
+
+/**/
+.kitchen-view{background-color: white;}
+.kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; border: 1px solid #c8c7cc;border-radius: 5px;margin: 10px;}
+.kitchen-item .kit-item-img{  line-height: 82px;  max-width: 126px;  height: 82px;margin-right: 10px;}
+.kitchen-item .kit-item-txt{flex: 1;border-bottom: 1px solid #c8c7cc;width: 100%;}
+.kit-item-txt.mui-pull-left .cut p {font-size: 16px;line-height: 16px;}
+.kit-item-txt.mui-pull-left img {width: 68px;margin: 10px 10px 10px 0px;float: left;}
+.kitchen-item .kit-item-txt .item-base-txt{ flex: 1;}
+.kitchen-item .kit-item-txt .kit-item-txt-tt{color: #333333;font-size: 1.0rem;}
+.kitchen-more{background-color: white;height: 44px;align-items: center; display: -webkit-flex;}
+.kitchen-more .kitchen-more-btn{align-items: center; width: 80px; height: 30px;background-color: white;text-align: center;line-height: 30px;margin: 0 auto;border-radius: 5px;border: #e6e6e6 solid 1px;color: #333333;}
+.ibt-bsv{text-align: left;color: #939393;font-size: 14px;}
+.ibt-bsv .ibt-bsv-bk{width:18px;height: 20px; margin-right: 3px;}
+.mui-slider1 .mui-slider-group .mui-slider-item img {width: 100%;}
+.kit-item-txt.mui-media-body img {width: 16px;}
+span.mui-icon p {margin-left: 16px;}
+
+/**/
+.title,.title-a,.title-b,.title-c  {border-bottom: 1px solid #c8c7cc;}
+.title,.title-a,span {font-size: 18px;line-height: 36px;}
+.title-b span {font-size: 14px;line-height: 36px;}
+.title-b span p {font-size: 16px;line-height: 20px;color: #000;}
+.title-c span p {font-size: 14px;line-height: 18px;}
+.title-b small {font-size: 16px;font-weight: bold;}
+span.jieshao {margin-top: -75px;float: left;margin-left: 68px;}
+span.cut {float: left;}
+span {font-size: 16px;}
+span.ing {float: right;color: #ffa935;font-size: 14px;line-height: 38px;font-weight: normal;}
+span.ing input {float: right;margin-top: 13px;margin-left: 2px;}
+span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
+.mui-ellipsis-3 {display: -webkit-box;overflow: hidden;white-space: normal!important;text-overflow: ellipsis;word-wrap: break-word;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.fx-item-tt{color: #333333;font-size: 1.2rem;}
+.fx-item-ds{color: #939393;font-size: 0.8rem;margin-top: 5px;}
+.fx-item-view{background-color: white;height:auto;}
+.fx-scroll-my{background-color: white;}
+
+/*我的页面*/
+.user-header-view{background-color:#feab34;height:150px;display: -webkit-flex;}
+.user-header-view .user-topv{text-align: center;width: 80%; height: 140px;align-self:center;margin: 0px auto;}
+.user-img{width: 80px; height: 80px; margin: 0 auto;}
+.user-topv img{width: 80px;display: -webkit-flex;border: 1px solid #ffa935;border-radius: 40px;}
+.user-longin{color: white;margin: 10px; font-size: 1.0rem;}
+.user-himt{color: white;font-size: 0.85rem;}
+.mui-table-tit-cell img{width: 36px;}
+.mui-tp {display: block;text-align: center;}
+.mui-content .mui-tp img{margin-top: 120px;width: 130px;}
+.mui-content .mui-tp .mui-word{font-size: 14px;margin-top: -10px;}
+
+/*详情页面*/
+.main{width: auto;}
+.media-body{color: #000;margin-left: 15px;margin-top: 15px;}
+.media-body p{font-size: 14px;line-height: 28px;}
+video{width: 100%;height: 100%;}
+
+/*搜索页面*/
+.top-sch-box {height: 40px; margin: 10px; padding: 10px;font-size: 14px;color: #999999;background-color: #fff;border-radius: 3px;}
+.centerflex {display: flex;-webkit-box-align: center;align-items: center;}
+.top-sch-box .fdj {color: #979797;font-size: 24px;float: left;margin-top: -24px;}
+.top-sch-box .sch-txt {width: 100%; padding: 0 10px;border: none;height: 40px;font-size: 16px; background-color: #fff;margin-top: -10px;}
+
+
+
+
+
+
+
+
+
+
+

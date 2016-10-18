@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <!--标准mui.css-->
+        <link rel="stylesheet" href="css/mui.min.css">
+        <!--App自定义的css-->
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/index.main.css" />
+        <!--<link href="../css/mui.picker.css" rel="stylesheet" />
+        <link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
+        <link rel="stylesheet" href="css/mui.picker.min.css" />
+    <style>
+        #calendar-container {
+            font-size: 16px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffa935;
+            margin: 0 auto;
+        }
+
+        #calendar-title, #calendar-week, #calendar-days, #calendar-date {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1em;
+            width: 100%;
+        }
+
+        #calendar-title, #calendar-date {
+            justify-content: space-around;
+        }
+
+        #calendar-date {
+            width: 60%;
+            margin-top: 0;
+        }
+
+        #back-today {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #calendar-days {
+            flex-flow: wrap;
+        }
+
+        #calendar-days div, #calendar-week div {
+            width: 14.28%;
+            height: 3em;
+            line-height: 3em;
+            text-align: center;
+            background: rgb(248, 248, 248);
+        }
+
+        #calendar-week div {
+            border-radius: 50%;
+            background: #ffa935;
+            color: white;
+        }
+
+        #test {
+            width: 300px;
+            height: 42px;
+            margin: 30px auto;
+            border: 1px solid #ffa935;
+            text-align: center;
+            line-height: 42px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">日程安排</h1>
+</header>
+<div class="mui-content">
+    <div id="test">点击我调用日历
+    </div>
+</div>
+<script>
+    var calendar = {
+        /**
+         * 日历初始化
+         */
+        init: function () {
+            this.domCreate();
+            this.today();
+            this.addEvent();
+        },
+        year: 0, month: 0, day: 0, week: 0, monthDays: 0, isToday: false,
+        bindDom: null,
+        callback: null,
+        /**
+         * 通过ID把日历绑定到DOM元素上
+         * @param domId
+         * @param callback
+         */
+        bind: function (domId, callback) {
+            var that = this;
+            that.bindDom = that.getDomById(domId);
+            that.bindDom && (that.bindDom.onclick = function () {
+                var calendar = that.getDomById("calendar-container");
+                !calendar ? that.init() : calendar.style.display = "";
+                typeof callback === "function" && (that.callback = callback);
+            });
+        },
+        getDomById: function (id) {
+            return document.getElementById(id);
+        },
+        hide: function () {
+            var date = {
+                year: this.year,
+                month: this.month + 1,
+                day: this.day,
+                week: this.week,
+                monthDays: this.monthDays
+            };
+            this.today();
+            this.getDomById("calendar-container").style.display = "none";
+            this.bindDom && (this.bindDom.innerHTML = date.year + "-" + date.month + "-" + date.day);
+            this.callback && this.callback(date);
+        },
+
+        /**
+         * 日历DOM创建
+         * @returns {Node}
+         */
+        domCreate: function () {
+            var days = "";
+            for (var i = 0; i < 37; i++) {
+                days += '<div></div>'
+            }
+            var calendar = document.createElement("div");
+            calendar.id = "calendar-container";
+            calendar.innerHTML = '    <div id="calendar-title">' +
+                    '        <div id="calendar-pre-month">&lt;</div>' +
+                    '        <div id="calendar-date">' +
+                    '            <span id="calendar-year"></span> 年' +
+                    '            <span id="calendar-month"></span> 月' +
+                    '            <span id="back-today">回到今天</span> ' +
+                    '        </div>' +
+                    '        <div id="calendar-next-month">&gt;</div>' +
+                    '    </div>' +
+                    '    <div id="calendar-week">' +
+                    '        <div>日</div>' +
+                    '        <div>一</div>' +
+                    '        <div>二</div>' +
+                    '        <div>三</div>' +
+                    '        <div>四</div>' +
+                    '        <div>五</div>' +
+                    '        <div>六</div>' +
+                    '    </div>' +
+                    '    <div id="calendar-days">' + days + '</div>';
+            return document.body.appendChild(calendar);
+        },
+        today: function () {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth();
+            var day = now.getDate();
+            var week = now.getDay();
+            var monthDays = new Date(year, month + 1, 0).getDate();
+            this.year = year;
+            this.month = month;
+            this.day = day;
+            this.week = week;
+            this.monthDays = monthDays;
+            this.isToday = true;
+            this.setDate(year, month, day, week, monthDays);
+        },
+        /**
+         * 日期设置
+         * @param year
+         * @param month
+         * @param day
+         * @param week
+         * @param monthDays
+         */
+        setDate: function (year, month, day, week, monthDays) {
+            this.getDomById("calendar-year").innerText = year;
+            this.getDomById("calendar-month").innerText = month + 1;
+            var daysDom = this.getDomById("calendar-days").children;
+            for (var j = 0; j < daysDom.length; j++) { //清空
+                var item = daysDom[j];
+                item.innerText = "";
+                item.style.background = "rgb(248,248,248)";
+            }
+            for (var i = 0; i < monthDays; i++) {  //填写日期
+                var _day = daysDom[i + week - 1] || daysDom[0];
+                _day.innerText = i + 1;
+                _day.className = "days";
+            }
+            this.isToday && (daysDom[day + week - 2].style.background = "rgb(44,151,221)");
+        },
+        /**
+         * 上一月下一月切换
+         * @param preOrNext
+         */
+        changeMonth: function (preOrNext) {
+            preOrNext == "pre" && (--this.month == 0) && (this.month = 12) && (--this.year < 1970) && (this.year = 1970);
+            preOrNext == "next" && (++this.month == 12) && (this.month = 1) && (++this.year > 2099) && (this.year = 2099);
+            var someDay = new Date(this.year, this.month, this.day);
+            this.isToday = false;
+            this.week = someDay.getDay();
+            this.monthDays = new Date(this.year, this.month + 1, 0).getDate();
+            this.setDate(this.year, this.month, this.day, this.week, this.monthDays);
+        },
+
+        addEvent: function () {
+            var that = this;
+            that.getDomById("calendar-container").onclick = function (e) {
+                var target = e.target;
+                switch (target.id || target.className) {
+                    case "back-today":
+                        that.today();
+                        break;
+                    case "days":
+                        that.day = target.innerHTML;
+                        that.hide();
+                        break;
+                    case "calendar-pre-month":
+                        that.changeMonth("pre");
+                        break;
+                    case "calendar-next-month":
+                        that.changeMonth("next");
+                        break;
+                }
+            }
+        }
+    };
+
+    calendar.bind("test", function (date) {
+        console.log(date);
+    });
+</script>
+</body>
+</html>

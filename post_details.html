@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>销售商系统</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="css/app.css" />
+		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+		<style>
+			html,
+			body,
+			.mui-content {
+				height: 0px;
+				margin: 0px;
+				background-color: #efeff4;
+			}
+			h5.mui-content-padded {
+				margin-left: 3px;
+			}
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			.mui-btn {
+				font-size: 18px;
+				padding: 5px;
+				margin: 0px;
+			}
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">驿站明细</h1>
+        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
+    </header>
+		<div class="mui-content">
+		<div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
+                        <tr align=center><td>驿站名称：</td><td>明鑫花苑</td></tr>
+                        <tr align=center><td>驿站长：</td><td>驿站长A</td></tr>
+                        <tr align=center><td>联系电话：</td><td>18850227272<a class="btn-color-w mui-icon mui-icon-phone mui-pull-right" href=""></a></td></tr>
+                        <tr align=center><td>驿站地址：</td><td>泉州市丰泽区成洲工业区大通厂</td></tr>
+                        <tr align=center><td>所属公司：</td><td>泉州分公司</td></tr>
+                        </table>   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<!--<script src="js/mui.picker.js"></script>
+		<script src="js/mui.dtpicker.js"></script>-->
+		<script src="js/mui.picker.min.js"></script>
+	</body>
+
+</html>
