@@ -63,9 +63,9 @@ span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 /*我的页面*/
 .user-header-view{background-color:#feab34;height:150px;display: -webkit-flex;}
 .user-header-view .user-topv{text-align: center;width: 80%; height: 140px;align-self:center;margin: 0px auto;}
-.user-img{width: 80px; height: 80px; margin: 0 auto;}
-.user-topv img{width: 80px;display: -webkit-flex;border: 1px solid #ffa935;border-radius: 40px;}
-.user-longin{color: white;margin: 10px; font-size: 1.0rem;}
+.user-img{width: 80px; height: 80px; margin: 0 auto;text-align: center;}
+.user-topv img{width: 72px;display: -webkit-flex;border: 1px solid #ffa935;border-radius: 40px;}
+.user-longin{color: white;font-size: 16px;}
 .user-himt{color: white;font-size: 0.85rem;}
 .mui-table-tit-cell img{width: 36px;}
 .mui-tp {display: block;text-align: center;}
