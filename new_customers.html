@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+</script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">新增客户</h1>
+        <a class="btn-color mui-pull-right" href="">保存</a>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--发现-->
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                    <div class="user-topv">
+                                        <div class="user-img"><img src="images/main.png" alt=""></div>
+                                        <p class="photo">点击头像修改</p>
+                                    </div>
+                                </a>
+                                <div class="mui-wrap-c">
+                                    <p class="higher-new"><span style="color:red">*</span>客户名称：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：
+                                        <input name="radio1" type="radio"><label>男</label>
+                                        <input name="radio1" type="radio"><label>女</label>   
+                                    </p>         
+                                </div>
+                                <div class="mui-wrap">
+                                    <p class="people-name">&nbsp客户来源：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>联系电话：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>家庭住址：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>          
+                                </div>
+                                <div class="mui-people-name">
+                                    <p class="higher-new">&nbsp微&nbsp&nbsp信&nbsp&nbsp号：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="higher-new">&nbsp生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="higher-new">&nbsp职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>          
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+    </script>
+
+</body>
+</html>

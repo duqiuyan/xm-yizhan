@@ -21,76 +21,87 @@
 
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
-        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href=""></a>
-        <h1 class="mui-title">驿站管理系统</h1>
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">客户信息</h1>
     </header>
-
-    <!--底部Bar-->
-    <nav class="footerBar mui-bar mui-bar-tab">
-        <a class="mui-tab-item" href="#tabbar-home">
-            <span class="mui-icon mui-icon-home"></span>
-            <span class="mui-tab-label">首页</span>
-        </a>
-        <a class="mui-tab-item mui-active" href="#tabbar-personal">
-            <span class="mui-icon mui-icon-contact"></span>
-            <span class="mui-tab-label">个人中心</span>
-        </a>
-    </nav>
 
     <!--内容区域-->
     <div class="mui-content">
-
-        <!--我的-->
         <div id="tabbar-view-user" class="mui-control-content mui-active">
             <div class="user-header-view">
                 <div class="user-topv">
                     <div class="user-img"><img src="images/main.png" alt=""></div>
                     <div class="user-longin">张三三</div>
-                    <p>A驿站</p>
+                    <p>LA727272</p>
                 </div>
             </div>
+            <div class="message">
+                <p>余额：2500.00</p>
+                <p>欠款：100.00</p>
+                <p>预扣：250.00</p>
+                <small>积分：100</small>
+            </div>
+            <div class="cell-interval"></div>
 
-            <ul class="mui-table-view mui-table-view-chevron">
+            <ul class="mui-table-view mui-message">
                 <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="basic_data.html">
-                        <img class="mui-media-object mui-pull-left" src="images/female.png">
+                    <a class="mui-navigate-right" href="basic.html">
+                        <img class="mui-media-message mui-pull-left" src="images/jibenxinxi.png">
                         <div class="mui-media-body">
-                            <h5>基本资料</h5>
+                            <h3>基本信息</h3>
                         </div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="daily_schedule.html">
-                        <img class="mui-media-object mui-pull-left" src="images/calendar.png">
+                    <a class="mui-navigate-right" href="car.html">
+                        <img class="mui-media-message mui-pull-left" src="images/car.png">
                         <div class="mui-media-body">
-                            <h5>日程安排</h5>
+                            <h3>汽车资料</h3>
                         </div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="message_center.html">
-                        <img class="mui-media-object mui-pull-left" src="images/notepada.png">
+                    <a class="mui-navigate-right" href="">
+                        <img class="mui-media-message mui-pull-left" src="images/shenghuo.png">
                         <div class="mui-media-body">
-                            <h5>通知</h5>
+                            <h3>生活资料</h3>
                         </div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="password.html">
-                        <img class="mui-media-object mui-pull-left" src="images/setting.png">
+                    <a class="mui-navigate-right" href="">
+                        <img class="mui-media-message mui-pull-left" src="images/ziliao.png">
                         <div class="mui-media-body">
-                            <h5>设置</h5>
+                            <h3>重要资料</h3>
+                        </div>
+                    </a>
+                </li>
+                <div class="cell-interval"></div>
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right" href="">
+                        <img class="mui-media-message mui-pull-left" src="images/baifang.png">
+                        <div class="mui-media-body">
+                            <h3>拜访</h3>
                         </div>
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right">
-                        <img class="mui-media-object mui-pull-left" src="images/rss.png">
+                    <a class="mui-navigate-right" href="">
+                        <img class="mui-media-message mui-pull-left" src="images/dingdan.png">
                         <div class="mui-media-body">
-                            <h5>注销</h5>
+                            <h3>订单</h3>
                         </div>
                     </a>
                 </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right" href="">
+                        <img class="mui-media-message mui-pull-left" src="images/rizhi.png">
+                        <div class="mui-media-body">
+                            <h3>日志</h3>
+                        </div>
+                    </a>
+                </li>
+                <div class="cell-interval"></div>
             </ul>
         </div>
     </div>
@@ -108,14 +119,14 @@
             // 判读点击第几个底部按钮
             if (targetTab == "#tabbar-home" && temp != targetTab) {  
                 console.log("aaa");//调试信息
-                mui.openWindow({url:'index.html'});
+                mui.openWindow({url:'index1.html'});
             }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
                 console.log("bbb");//调试信息
-                mui.openWindow({url:'personal.html'});
+                mui.openWindow({url:'index2.html'});
             } 
 
             temp = targetTab;
-        });  
+        }); 
         
     </script>
     

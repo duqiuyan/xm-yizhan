@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">客户管理</h1>
+        <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="new_customers.html"></a>
+    </header>
+
+    <script type="text/javascript">
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--发现-->
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div class="top-sch-box flex-col">
+                <div class="centerflex">
+                    <i class="fdj iconfont mui-icon mui-icon-search"></i>
+                    <input type="text" name="" id="" value="" class="sch-txt" placeholder="搜索">
+                </div>
+            </div>
+            
+            <!--进行中模块-->
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="customer_information.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="mui-icon mui-icon-person">周小姐：18750571544</p>
+                                        <span class="ing">黑名单</span>
+                                        <p class="mui-icon mui-icon-location">福建省泉州市刺桐路116号
+                                        </p>
+                                        <p class='mui-icon mui-icon-person'>VIP&nbsp&nbspLA727272</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="customer_information.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="mui-icon mui-icon-person">周小姐：18750571544</p>
+                                        <p class="mui-icon mui-icon-location">福建省泉州市刺桐路116号
+                                        </p>
+                                        <p class='mui-icon mui-icon-person'>VIP&nbsp&nbspLA727272</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="customer_information.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="mui-icon mui-icon-person">周小姐：18750571544</p>
+                                        <p class="mui-icon mui-icon-location">福建省泉州市刺桐路116号
+                                        </p>
+                                        <p class='mui-icon mui-icon-person'>VIP&nbsp&nbspLA727272</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <div class="cell-interval"></div>
+                            <div class="cell-in">
+                                <span class="mui-spinner"></span>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+
+</body>
+</html>

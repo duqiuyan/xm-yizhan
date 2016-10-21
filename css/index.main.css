@@ -21,7 +21,7 @@
 .fr{float: right}
 
 /*首页－顶部三个菜单视图样式*/
-.mui-control-content {background-color: white;}
+/*.mui-control-content {background-color: white;}*/
 .mui-control-content .mui-loading { margin-top: 150px;}
 
 /**/
@@ -42,28 +42,30 @@
 span.mui-icon p {margin-left: 16px;}
 
 /**/
-.title,.title-a,.title-b,.title-c  {border-bottom: 1px solid #c8c7cc;}
-.title,.title-a,span {font-size: 18px;line-height: 36px;}
+.title,.title-a,.title-b,.title-c,.title-na  {border-bottom: 1px solid #c8c7cc;padding-bottom:5px;}
+.title-e {color: #333;margin-left: 10px;margin-right: 10px;}
+.title,.title-a,span {font-size: 18px;line-height: 32px;}
 .title-b span {font-size: 14px;line-height: 36px;}
-.title-b span p {font-size: 16px;line-height: 20px;color: #000;}
-.title-c span p {font-size: 14px;line-height: 18px;}
+.title-b span p {font-size: 14px;line-height: 20px;color: #333;}
+.title-c span p {font-size: 14px;line-height: 18px;color: #8f8f94;}
 .title-b small {font-size: 16px;font-weight: bold;}
 span.jieshao {margin-top: -75px;float: left;margin-left: 68px;}
 span.cut {float: left;}
 span {font-size: 16px;}
+span.money {float: right;margin-top: -95px;margin-right: 10px;}
 span.ing {float: right;color: #ffa935;font-size: 14px;line-height: 38px;font-weight: normal;}
 span.ing input {float: right;margin-top: 13px;margin-left: 2px;}
 span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 .mui-ellipsis-3 {display: -webkit-box;overflow: hidden;white-space: normal!important;text-overflow: ellipsis;word-wrap: break-word;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
 .fx-item-tt{color: #333333;font-size: 1.2rem;}
 .fx-item-ds{color: #939393;font-size: 0.8rem;margin-top: 5px;}
-.fx-item-view{background-color: white;height:auto;}
-.fx-scroll-my{background-color: white;}
+.fx-item-view{height:auto;}
+/*.fx-scroll-my{background-color: white;}*/
 
 /*我的页面*/
 .user-header-view{background-color:#feab34;height:150px;display: -webkit-flex;}
 .user-header-view .user-topv{text-align: center;width: 80%; height: 140px;align-self:center;margin: 0px auto;}
-.user-img{width: 80px; height: 80px; margin: 0 auto;text-align: center;}
+.user-img{width: 80px; height: 80px; margin: 0 auto; text-align: center;}
 .user-topv img{width: 72px;display: -webkit-flex;border: 1px solid #ffa935;border-radius: 40px;}
 .user-longin{color: white;font-size: 16px;}
 .user-himt{color: white;font-size: 0.85rem;}
@@ -74,23 +76,74 @@ span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 
 /*详情页面*/
 .main{width: auto;}
-.media-body{color: #000;margin-left: 15px;margin-top: 15px;}
+.media-body{color: #333;margin-left: 15px;margin-top: 15px;}
 .media-body p{font-size: 14px;line-height: 28px;}
 video{width: 100%;height: 100%;}
 
 /*搜索页面*/
-.top-sch-box {height: 40px; margin: 10px; padding: 10px;font-size: 14px;color: #999999;background-color: #fff;border-radius: 3px;}
+.top-sch-box {height: 34px; margin: 10px; padding: 10px;font-size: 14px;color: #999999;background-color: #fff;border-radius: 3px;}
 .centerflex {display: flex;-webkit-box-align: center;align-items: center;}
 .top-sch-box .fdj {color: #979797;font-size: 24px;float: left;margin-top: -24px;}
-.top-sch-box .sch-txt {width: 100%; padding: 0 10px;border: none;height: 40px;font-size: 16px; background-color: #fff;margin-top: -10px;}
+.top-sch-box .sch-txt {width: 100%; padding: 0 10px;border: none;height: 34px;font-size: 16px; background-color: #fff;margin-top: -10px;}
 
+/*驿站明细页面*/
+.mui-ziliao {color: #333;font-size: 16px;line-height: 28px;padding-top: 5px;}
+p.zhiwei {color: #333;font-size: 16px;line-height: 8px;padding-left: -18px;}
+p.mui-number {color: #333;font-size: 16px;padding-bottom: 5px;}
+.title-e img {margin:15px 10px 10px 5px;}
+.mui-ziliao p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {margin-top: -42px;margin-right: 80px;}
+.title-e img.mui-media-people.mui-pull-left {width: 68px;}
+.mui-tita {margin-top: -10px;background-color: #fff;}
+p.people {color: #333;font-size: 16px;margin-left: 5px;line-height: 5px;}
+li.mui-table-view-cell.mui-media {list-style-type: none;}
+li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}
+p.zixun {color: #333;font-size: 16px;line-height: 5px;padding: 0px 5px;}
+p.jieshao {color: #333;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -10px;padding: 0px 5px;}
 
+/*驿站小区资讯*/
+span.mui-name {line-height: 20px;}
+span.mui-name small {margin-left: 20px;}
+.title-number {font-weight: bold; margin-top: -5px;border-bottom: 1px solid #c8c7cc;}
+.kit-item-name p {color: #333;}
+.title-na p {color: #333;}
+.title-na img {width: 16px;}
+p.mui-name small {padding-left: 30px;}
+p.mui-name-a small {padding-left: 30px;}
+.kit-item-name {border-bottom: 1px solid #c8c7cc;padding-bottom: 5px;}
+input[type=sub] {color: #fff;border: 1px solid #ffa935;background-color: #ffa935;}
+input[type=sub] {margin-top: 10px;font-size: 14px;line-height: 28px;margin-bottom: 0;text-align: center;color: #ffa935;border: 1px solid #ffa935;border-radius: 3px;background-color: #fff;margin-right: 15px;width: 80px;float: inherit;}
 
+a.btn-color.mui-pull-right {margin-top: 13px; font-size: 14px;}
 
+/*添加其它*/
+.mui-wrap p,.mui-wrap-b p {color: #333;}
+.mui-wrap {border-bottom: 1px solid #c8c7cc;}
+.mui-wrap-a {border-bottom: 1px solid #c8c7cc;padding-bottom: 40px;}
+.mui-wrap-b {border-bottom: 1px solid #c8c7cc;}
+.mui-wrap-c {border-bottom: 1px solid #c8c7cc;margin-top: -12px;}
+select#address {width: 23%;}
+.mui-wrap-a p {color: #333;}
+input[type="address"] {width: 67%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
+input[type="name"] {width: 58%;float: inherit;height: 30px;}
+span.danwei{margin-left: 5px;}
+.kit-item-people span {margin-top: -38px;}
+.kit-item-people p{line-height: 20px;}
 
+/*添加其它*/
+input[type="people-name"] {width: 67%;float: inherit;height: 30px;}
+p.people-name select {width: 67%;}
+p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #c8c7cc;padding-bottom: 10px;}
+ul.mui-table-view.mui-message img {width: 24px;}
 
+/*客户信息*/
+.message p {color: #333;font-size: 12px;margin: 5px 4px;line-height: 32px;border-right: 1px solid #c8c7cc;}
+.message {display: -webkit-inline-box;background-color: #fff;width: 100%;}
+.message small {font-size: 12px;line-height: 40px;}
+.mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
 
-
-
+/*基本信息*/
+span.xingbie {margin-left: 20px;}
+td span {line-height: 20px;}
+p.license-plate span{padding-left: 20px;line-height: 10px;}
 
 

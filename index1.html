@@ -46,39 +46,37 @@
                 <input type="text" name="" id="" value="" class="sch-txt" placeholder="搜索">
             </div>
         </div> -->
-        <div id="qyslider" class="mui-slider" >
-            <!-- 第一张 -->
-            <div class="mui-slider-item">
-                <a href="#">
-                    <img src="images/aaa.png">
-                </a>
-            </div>
+        <!-- 第一张 -->
+        <div class="mui-slider-item">
+            <a href="#">
+                <img src="images/aaa.png">
+            </a>
         </div>
         <ul class="user-menus-view mui-table-view mui-grid-view mui-grid-9">
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
                     <img src="images/male.png" alt="">
                     <div class="mui-media-body">客户拜访</div></a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="client_list.html">
                     <img src="images/myspace.png" alt="">
                     <div class="mui-media-body">客户管理</div></a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="message_a.html">
                     <img src="images/home.png" alt="">
                     <div class="mui-media-body">驿站管理</div></a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="order_tracking.html">
                     <img src="images/foursquare.png" alt="">
                     <div class="mui-media-body">订单管理</div></a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
+                <!-- <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="message_b.html">
                     <img src="images/femalea.png" alt="">
                     <div class="mui-media-body">服务人员</div></a>
-                </li>
-                <!-- <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
+                </li> -->
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
                     <img src="images/notepad.png" alt="">
                     <div class="mui-media-body">营销活动</div></a>
-                </li> -->
+                </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="">
                     <img src="images/livejournal.png" alt="">
                     <div class="mui-media-body">考勤管理</div></a>
@@ -99,10 +97,10 @@
             // 判读点击第几个底部按钮
             if (targetTab == "#tabbar-home" && temp != targetTab) {  
                 console.log("aaa");//调试信息
-                mui.openWindow({url:'index.html'});
+                mui.openWindow({url:'index1.html'});
             }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
                 console.log("bbb");//调试信息
-                mui.openWindow({url:'personal.html'});
+                mui.openWindow({url:'index2.html'});
             } 
 
             temp = targetTab;

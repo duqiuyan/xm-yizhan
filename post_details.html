@@ -2,75 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>销售商系统</title>
+    <title>驿站管理系统</title>
 
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<!--标准mui.css-->
-		<link rel="stylesheet" href="css/mui.min.css">
-		<!--App自定义的css-->
-		<link rel="stylesheet" href="css/app.css" />
-		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
-		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
-		<link rel="stylesheet" href="css/mui.picker.min.css" />
-		<style>
-			html,
-			body,
-			.mui-content {
-				height: 0px;
-				margin: 0px;
-				background-color: #efeff4;
-			}
-			h5.mui-content-padded {
-				margin-left: 3px;
-			}
-			h5.mui-content-padded:first-child {
-				margin-top: 12px !important;
-			}
-			.mui-btn {
-				font-size: 18px;
-				padding: 5px;
-				margin: 0px;
-			}
-			.ui-alert {
-				text-align: center;
-				padding: 20px 10px;
-				font-size: 16px;
-			}
-			* {
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-			}
-		</style>
-	</head>
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
 
-	<body>
-		<header class="headerBar mui-bar mui-bar-nav">
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
         <h1 class="mui-title">驿站明细</h1>
-        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
     </header>
-		<div class="mui-content">
-		<div id="tabbar-view-find" class="mui-control-content mui-active">
-            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
-                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
-                    <div class="mui-scroll">
-                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                        <tr align=center><td>驿站名称：</td><td>明鑫花苑</td></tr>
-                        <tr align=center><td>驿站长：</td><td>驿站长A</td></tr>
-                        <tr align=center><td>联系电话：</td><td>18850227272<a class="btn-color-w mui-icon mui-icon-phone mui-pull-right" href=""></a></td></tr>
-                        <tr align=center><td>驿站地址：</td><td>泉州市丰泽区成洲工业区大通厂</td></tr>
-                        <tr align=center><td>所属公司：</td><td>泉州分公司</td></tr>
-                        </table>   
+
+    <script type="text/javascript">
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+         <!--首页-->
+        <div id="tabbar-view-home" class="mui-control-content mui-active">
+            <div id="slider" class="mui-slider1">
+                <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+                <div class="mui-slider-group">
+                    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                        <!--幻灯片-->
+                        <div id="qyslider" class="mui-slider" >
+                            <div class="mui-slider-group mui-slider-loop">
+                                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="images/banner04.png">
+                                    </a>
+                                </div>
+                                <!-- 第一张 -->
+                                <div class="mui-slider-item">
+                                    <a href="#">
+                                        <img src="images/banner01.png">
+                                    </a>
+                                </div>
+                                <!-- 第二张 -->
+                                <div class="mui-slider-item">
+                                    <a href="#">
+                                        <img src="images/banner02.png">
+                                    </a>
+                                </div>
+                                <!-- 第三张 -->
+                                <div class="mui-slider-item">
+                                    <a href="#">
+                                        <img src="images/banner03.png">
+                                    </a>
+                                </div>
+                                <!-- 第四张 -->
+                                <div class="mui-slider-item">
+                                    <a href="#">
+                                        <img src="images/banner04.png">
+                                    </a>
+                                </div>
+                                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                                <div class="mui-slider-item mui-slider-item-duplicate">
+                                    <a href="#">
+                                        <img src="images/banner01.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mui-slider-indicator">
+                                <div class="mui-indicator mui-active"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                                <div class="mui-indicator"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-		</div>
-		<script src="js/mui.min.js"></script>
-		<!--<script src="js/mui.picker.js"></script>
-		<script src="js/mui.dtpicker.js"></script>-->
-		<script src="js/mui.picker.min.js"></script>
-	</body>
+        <div class="kit-item-txt mui-media-body">
+            <p class='dizhi'>地址：泉秀街165号旁
+                <button  type="button" class="miu-look">查看路线</button>
+            </p>
+        </div>
+        <p class='jieshao'>驿站介绍</p>
+        <div class="mui-tit">
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right" href="information.html">
+                    <p class='zixun'>驿站小区资讯</p>
+                </a>
+            </li>
+        </div>
+        <!-- <a class="mui-navigate-right" href=""></a> -->
+        <div class="title-e">
+            <img class="mui-media-people mui-pull-left" src="images/main.png">
+            <div class="mui-ziliao">
+                管理人员：
+                <span>李勇文</span>
+                <p class="zhiwei">驿站站长</p>
+                <p class="mui-number">18752000033</p>
+                <p class="btn-color-w mui-icon mui-icon-phone mui-pull-right"></p>
+            </div>
+        </div>
+        <div class="mui-tita">
+           <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right" href="message_b.html">
+                   <p class='people'>驿站服务人员</p>
+                </a>
+            </li>
+        </div>
+    </div>
+     <script>
+        mui.init({
+            swipeBack: true
+        });
 
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+        
+        (function($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: true, //是否显示滚动条
+                swipeBack: false //启用右滑关闭功能
+            });
+            var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+            var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+            var item2 = document.getElementById('item2mobile');
+            var item3 = document.getElementById('item3mobile');
+            document.getElementById('slider').addEventListener('slide', function(e) {
+                if (e.detail.slideNumber === 1) {
+                    if (item2.querySelector('.mui-loading')) {
+                        setTimeout(function() {
+                            item2.querySelector('.mui-scroll').innerHTML = html2;
+                        }, 500);
+                    }
+                } else if (e.detail.slideNumber === 2) {
+                    if (item3.querySelector('.mui-loading')) {
+                        setTimeout(function() {
+                            item3.querySelector('.mui-scroll').innerHTML = html3;
+                        }, 500);
+                    }
+                }
+            });
+            
+            var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+            $('.mui-input-group').on('change', 'input', function() {
+                if (this.checked) {
+                    sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                    //force repaint
+                    sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+                }
+            });
+
+            /*幻灯片js动画效果*/
+            var slider = mui("#qyslider");
+            slider.slider({
+                interval: 500
+            });
+
+
+        })(mui);
+    </script>
+
+</body>
 </html>

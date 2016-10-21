@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">订单详情</h1>
+    </header>
+
+    <script type="text/javascript">
+        function sb1(){
+            alert("11");
+            //window.location.href="index1.html"; 
+            window.open("index1.html","_self");//"_target"
+        }
+
+        function sb2(){
+            alert("2");
+           // window.location.href="index2.html"; 
+            window.open("index2.html","_self");
+        }
+
+        function sb3(){
+            alert("3");
+            //window.location.href="index3.html"; 
+            window.open("index3.html","_self");
+        }
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+        <div class="mui-scroll">
+            <ul class="mui-table-view">
+                <li class="kitchen-item mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <!--文字信息-->
+                        <div class="title">
+                            <span>订单状态：</span>
+                            <small>(YY201609000799)</small>
+                            <span class="ing">进行中</span>
+                        </div>
+                        <div class="title-na">
+                            <p class='mui-icon'><img src="images/time.png" alt=""><small>2016-09-02 15:20:00</small>周五</p>
+                            <p class='mui-icon mui-icon-location'>福建省泉州市刺桐路116号
+                                <button  type="button" class="miu-look">查看路线</button>
+                            </p>
+                            <span class="mui-icon mui-icon-person">周小姐：18750571544<p class="btn-color-w mui-icon mui-icon-phone mui-pull-right"></p></span>
+                        </div>
+                        <div class="title-a">
+                            <span>客户备注：</span>
+                            <small>我玻璃要打扫干净一点</small>
+                        </div>
+                        <div class="title-b">
+                            <span>服务人员：</span>
+                            <small>李勇文</small>
+                            <p class='zhaopian'><img src="images/main.png" alt=""></p>
+                            <span class="money">
+                                <p>上门费：  ¥15.00</p>
+                                <p>工时金额：  ¥95.00</p>
+                                <p>合计金额：  ¥105.00</p>
+                            </span>
+                        </div>
+                        <div class="title-c">
+                            <span class="time">
+                                <p>接单时间：2015-11-11  09：00：00</p>
+                                <p>开始签到时间：2015-11-11  09：12：00</p>
+                                <p>结束签到时间：2015-11-11  09：12：00</p>
+                            </span>
+                        </div>
+                        <button type="button" class="mui-btn mui-btn-primary mui-icon mui-icon-phone-filled">
+                           联系公司
+                        </button>
+                    </a>
+                </li>
+                <div class="cell-interval"></div>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+
+    </script>
+
+</body>
+</html>
