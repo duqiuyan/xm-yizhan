@@ -22,26 +22,6 @@
         <h1 class="mui-title">订单详情</h1>
     </header>
 
-    <script type="text/javascript">
-        function sb1(){
-            alert("11");
-            //window.location.href="index1.html"; 
-            window.open("index1.html","_self");//"_target"
-        }
-
-        function sb2(){
-            alert("2");
-           // window.location.href="index2.html"; 
-            window.open("index2.html","_self");
-        }
-
-        function sb3(){
-            alert("3");
-            //window.location.href="index3.html"; 
-            window.open("index3.html","_self");
-        }
-    </script>
-
     <!--内容区域-->
     <div class="mui-content">
         <div class="mui-scroll">
@@ -90,31 +70,11 @@
                 <div class="cell-interval"></div>
             </ul>
         </div>
-
     </div>
-
     <script>
         mui.init({
             swipeBack: false
         });
-
-        //选项卡点击事件  
-        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
-        var targetTab = this.getAttribute('href');  
-            // 判读点击第几个底部按钮
-            if (targetTab == "#tabbar-view-home") {  
-                console.log("aaa");
-                mui.openWindow({url:'index1.html'});
-            }  else if (targetTab == "#tabbar-view-find"){
-                console.log("bbb");
-                mui.openWindow({url:'index2.html'});
-            } else if(targetTab == "#tabbar-view-user"){
-                console.log("ccc");
-                mui.openWindow({url:'index3.html'});
-            }
-        }); 
-
     </script>
-
 </body>
 </html>

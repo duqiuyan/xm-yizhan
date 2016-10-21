@@ -264,7 +264,7 @@
             // 判读点击第几个底部按钮
             if (targetTab == "#tabbar-home" && temp != targetTab) {  
                 console.log("aaa");//调试信息
-                mui.openWindow({url:'index1.html'});
+                mui.openWindow({url:'index.html'});
             }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
                 console.log("bbb");//调试信息
                 mui.openWindow({url:'index2.html'});
@@ -273,13 +273,6 @@
             temp = targetTab;
         }); 
 
-            /*幻灯片js动画效果*/
-            var slider = mui("#qyslider");
-            slider.slider({
-                interval: 500
-            });
-
-        })(mui);
     </script>
 
 </body>

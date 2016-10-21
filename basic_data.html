@@ -56,23 +56,6 @@
         mui.init({
             swipeBack: false
         });
-
-        //选项卡点击事件  
-        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
-        var targetTab = this.getAttribute('href');  
-            // 判读点击第几个底部按钮
-            if (targetTab == "#tabbar-view-home") {  
-                console.log("aaa");
-                mui.openWindow({url:'index1.html'});
-            }  else if (targetTab == "#tabbar-view-find"){
-                console.log("bbb");
-                mui.openWindow({url:'index2.html'});
-            } else if(targetTab == "#tabbar-view-user"){
-                console.log("ccc");
-                mui.openWindow({url:'index3.html'});
-            }
-        }); 
-
     </script>
 	</body>
 

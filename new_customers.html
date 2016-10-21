@@ -73,10 +73,10 @@
                                     <p class="higher-new">&nbsp微&nbsp&nbsp信&nbsp&nbsp号：
                                         <input type="people-name" name="people-name" value=""> 
                                     </p>
-                                    <p class="higher-new">&nbsp生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日：
+                                    <p class="higher-new">&nbsp生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日：
                                         <input type="people-name" name="people-name" value="">
                                     </p>
-                                    <p class="higher-new">&nbsp职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：
+                                    <p class="higher-new">&nbsp职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：
                                         <input type="people-name" name="people-name" value="">
                                     </p>          
                                 </div>
@@ -87,28 +87,10 @@
             </div>
         </div>
     </div>
-
     <script>
         mui.init({
             swipeBack: false
         });
-
-        //选项卡点击事件  
-        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
-        var targetTab = this.getAttribute('href');  
-            // 判读点击第几个底部按钮
-            if (targetTab == "#tabbar-view-home") {  
-                console.log("aaa");
-                mui.openWindow({url:'index1.html'});
-            }  else if (targetTab == "#tabbar-view-find"){
-                console.log("bbb");
-                mui.openWindow({url:'index2.html'});
-            } else if(targetTab == "#tabbar-view-user"){
-                console.log("ccc");
-                mui.openWindow({url:'index3.html'});
-            }
-        }); 
     </script>
-
 </body>
 </html>
