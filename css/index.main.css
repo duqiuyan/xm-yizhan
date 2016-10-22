@@ -76,7 +76,7 @@ span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 
 /*详情页面*/
 .main{width: auto;}
-.media-body{color: #333;margin-left: 15px;margin-top: 15px;}
+.media-body{color: #000;margin-left: 15px;margin-top: 15px;}
 .media-body p{font-size: 14px;line-height: 28px;}
 video{width: 100%;height: 100%;}
 
@@ -87,25 +87,25 @@ video{width: 100%;height: 100%;}
 .top-sch-box .sch-txt {width: 100%; padding: 0 10px;border: none;height: 34px;font-size: 16px; background-color: #fff;margin-top: -10px;}
 
 /*驿站明细页面*/
-.mui-ziliao {color: #333;font-size: 16px;line-height: 28px;padding-top: 5px;}
-p.zhiwei {color: #333;font-size: 16px;line-height: 8px;padding-left: -18px;}
-p.mui-number {color: #333;font-size: 16px;padding-bottom: 5px;}
+.mui-ziliao {color: #000;font-size: 16px;line-height: 28px;padding-top: 5px;}
+p.zhiwei {color: #000;font-size: 16px;line-height: 8px;padding-left: -18px;}
+p.number {color: #000;font-size: 16px;padding-bottom: 5px;}
 .title-e img {margin:15px 10px 10px 5px;}
 .mui-ziliao p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {margin-top: -42px;margin-right: 80px;}
 .title-e img.mui-media-people.mui-pull-left {width: 68px;}
 .mui-tita {margin-top: -10px;background-color: #fff;}
-p.people {color: #333;font-size: 16px;margin-left: 5px;line-height: 5px;}
+p.people {color: #000;font-size: 16px;margin-left: 5px;line-height: 5px;}
 li.mui-table-view-cell.mui-media {list-style-type: none;}
 li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}
-p.zixun {color: #333;font-size: 16px;line-height: 5px;padding: 0px 5px;}
-p.jieshao {color: #333;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -10px;padding: 0px 5px;}
+p.zixun {color: #000;font-size: 16px;line-height: 5px;padding: 0px 5px;}
+p.jieshao {color: #000;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -10px;padding: 0px 5px;}
 
 /*驿站小区资讯*/
 span.mui-name {line-height: 20px;}
 span.mui-name small {margin-left: 20px;}
 .title-number {font-weight: bold; margin-top: -5px;border-bottom: 1px solid #c8c7cc;}
-.kit-item-name p {color: #333;}
-.title-na p {color: #333;}
+.kit-item-name p {color: #000;}
+.title-na p {color: #000;}
 .title-na img {width: 16px;}
 p.mui-name small {padding-left: 30px;}
 p.mui-name-a small {padding-left: 30px;}
@@ -116,28 +116,28 @@ input[type=sub] {margin-top: 10px;font-size: 14px;line-height: 28px;margin-botto
 a.btn-color.mui-pull-right {margin-top: 13px; font-size: 14px;}
 
 /*添加其它*/
-.mui-wrap p,.mui-wrap-b p {color: #333;}
+.mui-wrap p,.mui-wrap-b p {color: #000;}
 .mui-wrap {border-bottom: 1px solid #c8c7cc;}
 .mui-wrap-a {border-bottom: 1px solid #c8c7cc;padding-bottom: 40px;}
 .mui-wrap-b {border-bottom: 1px solid #c8c7cc;}
 .mui-wrap-c {border-bottom: 1px solid #c8c7cc;margin-top: -12px;}
-select#address {width: 23%;}
-.mui-wrap-a p {color: #333;}
-input[type="address"] {width: 67%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
+select#address {width: 21%;margin-right: 2px;}
+.mui-wrap-a p {color: #000;}
+input[type="address"] {width: 64%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
 input[type="name"] {width: 58%;float: inherit;height: 30px;}
 span.danwei{margin-left: 5px;}
 .kit-item-people span {margin-top: -38px;}
 .kit-item-people p{line-height: 20px;}
 
 /*添加其它*/
-input[type="people-name"] {width: 67%;float: inherit;height: 30px;}
-p.people-name select {width: 67%;}
+input[type="people-name"] {width: 100%;float: inherit;height: 30px;}
+p.people-name select {width: 100%;}
 p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #c8c7cc;padding-bottom: 10px;}
 ul.mui-table-view.mui-message img {width: 24px;}
 
 /*客户信息*/
-.message p {color: #333;font-size: 12px;margin: 5px 4px;line-height: 32px;border-right: 1px solid #c8c7cc;}
-.message {display: -webkit-inline-box;background-color: #fff;width: 100%;}
+.message p {color: #000;font-size: 12px;margin: 3px 0px;line-height: 34px;border-right: 1px solid #c8c7cc;width: 25%;text-align: center;}
+.message {display:  -webkit-box;background-color: #fff;}
 .message small {font-size: 12px;line-height: 40px;}
 .mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
 
@@ -145,5 +145,5 @@ ul.mui-table-view.mui-message img {width: 24px;}
 span.xingbie {margin-left: 20px;}
 td span {line-height: 20px;}
 p.license-plate span{padding-left: 20px;line-height: 10px;}
-
-
+p.car-number {border-bottom: 1px solid #c8c7cc;padding-bottom: 10px;}
+.kit-item-people span {line-height: 20px;}
