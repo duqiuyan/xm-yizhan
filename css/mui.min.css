@@ -191,9 +191,7 @@ textarea {
     overflow: auto
 }
 
-optgroup {
-    font-weight: 700
-}
+
 
 table {
     border-spacing: 0;
@@ -460,7 +458,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .mui-h6,h6 {
     font-size: 12px;
-    font-weight: 400;
     color: #8f8f94
 }
 
@@ -1326,7 +1323,6 @@ a.cel {
 
 .mui-title {
     font-size: 18px;
-    font-weight: 500;
     line-height: 44px;
     position: absolute;
     display: block;
@@ -1398,7 +1394,6 @@ a.cel {
 }
 
 .mui-bar .mui-btn {
-    font-weight: 400;
     position: relative;
     z-index: 20;
     top: 7px;
@@ -1732,7 +1727,6 @@ a.cel {
 
 .mui-card-header.mui-card-media .mui-media-body {
     font-size: 14px;
-    font-weight: 500;
     line-height: 17px;
     margin-bottom: 0;
     margin-left: 44px;
@@ -1801,7 +1795,6 @@ img.mui-media-people.mui-pull-left {
 
 .mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
     font-size: 30px;
-    font-weight: 600;
     right: 9px;
     content: '';
     color: #007aff
@@ -1987,7 +1980,6 @@ img.mui-media-people.mui-pull-left {
 }
 
 .mui-table-view-divider {
-    font-weight: 500;
     position: relative;
     margin-top: -1px;
     margin-left: 0;
