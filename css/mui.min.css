@@ -4,7 +4,7 @@
  * =====================================================
  *//*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
-    font-family: STHeiti Light;
+    font-family: STHeiti;
     -webkit-text-size-adjust: 100%
 }
 
@@ -215,7 +215,7 @@ td,th {
 }
 
 body {
-    font-family: STHeiti Light;
+    font-family: STHeiti;
     font-size: 17px;
     line-height: 21px;
     color: #000;
@@ -1594,7 +1594,7 @@ a.cel {
     background: red
 }
 .mui-icon-extra {
-    font-family: STHeiti Light;
+    font-family: STHeiti;
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
@@ -2345,7 +2345,7 @@ p.dizhi {
 }
 
 input,select,textarea {
-    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-family: STHeiti;
     font-size: 17px;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent
@@ -2482,7 +2482,7 @@ select:focus {
 }
 
 .mui-input-row label {
-    font-family: 'Helvetica Neue',Helvetica,sans-serif;
+    font-family: STHeiti;
     line-height: 1.1;
     float: left;
     width: 35%;
@@ -2614,7 +2614,7 @@ select:focus {
 }
 
 .mui-checkbox input[type=checkbox]:before,.mui-radio input[type=radio]:before {
-    font-family: STHeiti Light;
+    font-family: STHeiti;
     font-size: 28px;
     font-weight: 400;
     line-height: 1;
@@ -2654,7 +2654,7 @@ select:focus {
 }
 
 .mui-select:before {
-    font-family: Muiicons;
+    font-family: STHeiti;
     position: absolute;
     top: 8px;
     right: 21px;
@@ -2745,7 +2745,7 @@ select:focus {
 }
 
 .mui-search:before {
-    font-family: STHeiti Light;
+    font-family: STHeiti;
     font-size: 20px;
     font-weight: 400;
     position: absolute;
@@ -3843,7 +3843,7 @@ body>.mui-progressbar {
 }
 
 .mui-navigate-right:after,.mui-push-left:after,.mui-push-right:after {
-    font-family:STHeiti Light;
+    font-family:STHeiti;
     font-size: inherit;
     line-height: 1;
     position: absolute;
@@ -4044,11 +4044,11 @@ body>.mui-progressbar {
 }
 
 @font-face {
-    font-family:STHeiti Light;font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
+    font-family:STHeiti;font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
 }
 
 .mui-icon {
-    font-family:STHeiti Light;
+    font-family:STHeiti;
     font-size: 16px;
     line-height: 1;
     font-weight: normal;
