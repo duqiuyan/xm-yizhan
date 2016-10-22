@@ -4,7 +4,7 @@
  * =====================================================
  *//*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
-    font-family: "华文细黑";
+    font-family: "华文细黑",STHeiti Light;
     -webkit-text-size-adjust: 100%
 }
 
@@ -215,7 +215,7 @@ td,th {
 }
 
 body {
-    font-family: "华文细黑";
+    font-family: "华文细黑",STHeiti Light;
     font-size: 17px;
     line-height: 21px;
     color: #000;
@@ -3843,7 +3843,7 @@ body>.mui-progressbar {
 }
 
 .mui-navigate-right:after,.mui-push-left:after,.mui-push-right:after {
-    font-family:"华文细黑";
+    font-family:"华文细黑",STHeiti Light;
     font-size: inherit;
     line-height: 1;
     position: absolute;
@@ -4044,11 +4044,11 @@ body>.mui-progressbar {
 }
 
 @font-face {
-    font-family:"华文细黑";font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
+    font-family:"华文细黑",STHeiti Light;font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
 }
 
 .mui-icon {
-    font-family:"华文细黑";
+    font-family:"华文细黑",STHeiti Light;
     font-size: 16px;
     line-height: 1;
     font-weight: normal;
