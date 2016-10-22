@@ -147,9 +147,9 @@ button,select {
 
 button,html input[type=button],input[type=reset],input[type=submit] {
     cursor: pointer;
-    margin-left: 11px;
     -webkit-appearance: button;
     float: inherit;
+    width: 31.3%;
 }
 
 button[disabled],html input[disabled] {
@@ -215,16 +215,12 @@ td,th {
 }
 
 body {
-    font-family: "华文细黑";
+    font-family: "冬青黑体";
     font-size: 17px;
     line-height: 21px;
     color: #000;
     background-color: #efeff4;
     -webkit-overflow-scrolling: touch
-}
-
-.kit-item-people p {
-    font-family: "华文细黑";
 }
 
 a {
@@ -457,7 +453,7 @@ h1,h2,h3,h4,h5,h6 {
 .mui-h5,h5 {
     font-size: 16px;
     font-weight: normal;
-    color: #333;
+    color: #000;
     line-height: 32px;
     padding-top: 8px;
 }
@@ -510,10 +506,11 @@ p.changpin img {
 }
 
 p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
-    margin-top: -2px;
-    margin-right: 40px;
+    margin-top: -24px;
     color: #ffa935;
     font-size: 24px;
+    float: left;
+    margin-left: 200px;
 }
 
 .fx-scroll-my.kitchen-item .kit-item-txt
@@ -650,7 +647,7 @@ p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
 }
 
 .mui-scroll p {
-    color: #333;
+    color: #000;
 }
 
 p.higher-type {
@@ -1770,7 +1767,7 @@ img.mui-media-people.mui-pull-left {
 }
 
 .mui-media-body {
-    color: #333;
+    color: #000;
 }
 
 .mui-table-view-icon .mui-table-view-cell .mui-navigate-right .mui-icon {
@@ -2054,11 +2051,11 @@ img.mui-media-people.mui-pull-left {
 .mui-media-body p {
     font-size: 15px;
     color: #878787;
-    margin-top: 10px;
+/*    margin-top: 10px;*/
 }
 
 p.dizhi {
-    color: #333;
+    color: #000;
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
@@ -2269,7 +2266,7 @@ p.dizhi {
     height: 16px;
     margin-top: 12px;
     text-overflow: ellipsis;
-    color: #333
+    color: #000
 }
 
 .mui-table-view.mui-grid-view .mui-table-view-cell:after,.mui-table-view.mui-grid-view .mui-table-view-cell:before {
@@ -2403,7 +2400,7 @@ select {
     font-size: 14px;
     background-color: #fff;
     padding: 6px 0px;
-    width: 58%;
+    width: 57%;
     float: inherit;
 }
 
@@ -3846,7 +3843,7 @@ body>.mui-progressbar {
 }
 
 .mui-navigate-right:after,.mui-push-left:after,.mui-push-right:after {
-    font-family: "华文细黑";
+    font-family:"冬青黑体";
     font-size: inherit;
     line-height: 1;
     position: absolute;
@@ -4047,11 +4044,11 @@ body>.mui-progressbar {
 }
 
 @font-face {
-    font-family:"华文细黑";font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
+    font-family:"冬青黑体";font-style:normal;src:url(../fonts/mui.ttf) format('truetype')
 }
 
 .mui-icon {
-    font-family: "华文细黑";
+    font-family:"冬青黑体";
     font-size: 16px;
     line-height: 1;
     font-weight: normal;
