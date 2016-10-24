@@ -4,7 +4,7 @@
 .headerBar{background-color: #feaa36;}
 
 /*底部颜色*/
-.footerBar{background-color: #f6f6f6;}
+.footerBar{background-color: #f6f6f6;box-shadow: 0 1px 6px #ccc;}
 
 /*按钮白色*/
 .btn-color-w{color: white;}
@@ -26,9 +26,9 @@
 
 /**/
 .kitchen-view{background-color: white;}
-.kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; border: 1px solid #c8c7cc;border-radius: 5px;margin: 10px;}
+.kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; /*border: 1px solid #c8c7cc;*/border-radius: 5px;margin: 10px;}
 .kitchen-item .kit-item-img{  line-height: 82px;  max-width: 126px;  height: 82px;margin-right: 10px;}
-.kitchen-item .kit-item-txt{flex: 1;border-bottom: 1px solid #c8c7cc;width: 100%;}
+.kitchen-item .kit-item-txt{flex: 1;border-bottom: 1px solid #eee;width: 100%;}
 .kit-item-txt.mui-pull-left .cut p {font-size: 16px;line-height: 16px;}
 .kit-item-txt.mui-pull-left img {width: 68px;margin: 10px 10px 10px 0px;float: left;}
 .kitchen-item .kit-item-txt .item-base-txt{ flex: 1;}
@@ -42,10 +42,11 @@
 span.mui-icon p {margin-left: 16px;}
 
 /**/
-.title,.title-a,.title-b,.title-c,.title-na  {border-bottom: 1px solid #c8c7cc;padding-bottom:5px;}
+.title,.title-a,.title-b,.title-c,.title-na  {border-bottom: 1px solid #eee;padding-bottom:10px;}
 .title-e {color: #333;margin-left: 10px;margin-right: 10px;}
-.title,.title-a,span {font-size: 18px;line-height: 32px;}
+.title,.title-a,span {font-size: 16px;line-height: 36px; padding-bottom: 0px;}
 .title-b span {font-size: 16px;line-height: 36px;}
+.title-b ,.title-c{padding-bottom: 0px;}
 .title-b span p {font-size: 14px;line-height: 20px;color: #333;}
 .title-c span p {font-size: 14px;line-height: 18px;color: #8f8f94;}
 .title-b small {font-size: 16px;font-weight: bold;}
@@ -103,24 +104,23 @@ p.jieshao {color: #000;font-size: 16px;margin-left: 10px; margin-right: 10px;lin
 /*驿站小区资讯*/
 span.mui-name {line-height: 20px;}
 span.mui-name small {margin-left: 20px;}
-.title-number {font-weight: bold; margin-top: -5px;border-bottom: 1px solid #c8c7cc;}
+.title-number {font-weight: bold; margin-top: -5px;border-bottom: 1px solid #eee;}
 .kit-item-name p {color: #000;}
 .title-na p {color: #000;}
 .title-na img {width: 16px;}
 p.mui-name small {padding-left: 30px;}
 p.mui-name-a small {padding-left: 30px;}
-.kit-item-name {border-bottom: 1px solid #c8c7cc;padding-bottom: 5px;}
+.kit-item-name {border-bottom: 1px solid #eee;padding-bottom: 5px;}
 input[type=sub] {color: #fff;border: 1px solid #ffa935;background-color: #ffa935;}
 input[type=sub] {margin-top: 10px;font-size: 14px;line-height: 28px;margin-bottom: 0;text-align: center;color: #ffa935;border: 1px solid #ffa935;border-radius: 3px;background-color: #fff;margin-right: 15px;width: 80px;float: inherit;}
-
 a.btn-color.mui-pull-right {margin-top: 13px; font-size: 14px;}
 
 /*添加其它*/
 .mui-wrap p,.mui-wrap-b p {color: #000;}
-.mui-wrap {border-bottom: 1px solid #c8c7cc;}
-.mui-wrap-a {border-bottom: 1px solid #c8c7cc;padding-bottom: 40px;}
-.mui-wrap-b {border-bottom: 1px solid #c8c7cc;}
-.mui-wrap-c {border-bottom: 1px solid #c8c7cc;margin-top: -12px;}
+.mui-wrap {border-bottom: 1px solid #eee;}
+.mui-wrap-a {border-bottom: 1px solid #eee;padding-bottom: 40px;}
+.mui-wrap-b {border-bottom: 1px solid #eee;}
+.mui-wrap-c {border-bottom: 1px solid #eee;margin-top: -12px;}
 select#address {width: 21%;margin-right: 2px;}
 .mui-wrap-a p {color: #000;}
 input[type="address"] {width: 64%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
@@ -132,11 +132,11 @@ span.danwei{margin-left: 5px;}
 /*添加其它*/
 input[type="people-name"] {width: 100%;float: inherit;height: 30px;}
 p.people-name select {width: 100%;}
-p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #c8c7cc;padding-bottom: 10px;}
+p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #eee;padding-bottom: 10px;}
 ul.mui-table-view.mui-message img {width: 24px;}
 
 /*客户信息*/
-.message p {color: #000;font-size: 12px;margin: 3px 0px;line-height: 34px;border-right: 1px solid #c8c7cc;width: 25%;text-align: center;}
+.message p {color: #000;font-size: 12px;margin: 3px 0px;line-height: 34px;border-right: 1px solid #eee;width: 25%;text-align: center;}
 .message {display:  -webkit-box;background-color: #fff;}
 .message small {font-size: 12px;line-height: 40px;}
 .mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
@@ -145,5 +145,10 @@ ul.mui-table-view.mui-message img {width: 24px;}
 span.xingbie {margin-left: 20px;}
 td span {line-height: 20px;}
 p.license-plate span{padding-left: 20px;line-height: 10px;}
-p.car-number {border-bottom: 1px solid #c8c7cc;padding-bottom: 10px;}
+p.car-number {border-bottom: 1px solid #eee;padding-bottom: 10px;}
 .kit-item-people span {line-height: 20px;}
+p.D-address {white-space: normal;}
+ul.mui-table-view.mui-message,ul.mui-table-view.mui-table-view-chevron,ul.mui-table-view.mui-administrate {background-color: #fff;}
+
+
+

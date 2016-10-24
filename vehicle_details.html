@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">车辆详情</h1>
+        <a class="btn-color mui-pull-right" href="">修改</a>
+    </header>
+
+    <script type="text/javascript">
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p><span style="color:red">*</span>驾驶证姓名：陈双双</p>
+                                        <p><span style="color:red">*</span>车牌:闽C88882</p>
+                                        <p><span style="color:red">*</span>车辆类型:C1</p>
+                                        <p class="car-number"><span style="color:red">*</span>车架号：LSVNN2180D2013488</p>
+                                        <p>品牌型号：</p>
+                                        <p>发动机型：</p>
+                                        <p class="D-address"><span style="color:red">*</span>行驶证住址：福建省泉州市丰泽区东海街道</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <!--文字信息-->
+                                <div class="kit-item-people">
+                                    <p class="license-plate">初登日期：2015-08-08</p>
+                                    <p>下次保养日期：2016-08-08</p>
+                                    <p >年检日期：2015-08-08</p>
+                                    <p>交强险到期日：2016-08-08</p>
+                                    <p>商业险到期：2016-08-08</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <!--文字信息-->
+                                <table width="100%" border="1" cellspacing="0" cellpadding="2" bordercolor="#eee">
+                                    <tbody>
+                                        <tr><td>商业险险种：</td><td><p><input name="checkbox1" value="Item 3" type="checkbox">车辆损失险</p><p><input name="checkbox1" value="Item 3" type="checkbox">商业第三者责任险</p><p><input name="checkbox1" value="Item 3" type="checkbox">全车盗抢险</p><p><input name="checkbox1" value="Item 3" type="checkbox">车上人员责任险</p><p><input name="checkbox1" value="Item 3" type="checkbox">自然损失险</p><p><input name="checkbox1" value="Item 3" type="checkbox">玻璃单独破碎险</p><p><input name="checkbox1" value="Item 3" type="checkbox">基本不计免赔险</p><p><input name="checkbox1" value="Item 3" type="checkbox">其他</p></td></tr>
+                                        <tr><td>交强险：</td><td><input name="checkbox1" value="Item 3" type="checkbox">交强险</td></tr>
+                                        <tr><td>代缴车船税：</td><td><input name="checkbox1" value="Item 3" type="checkbox">代缴车船税</td></tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+    </script>
+</body>
+</html>
