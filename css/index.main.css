@@ -94,7 +94,7 @@ p.number {color: #000;font-size: 16px;padding-bottom: 5px;}
 .title-e img {margin:15px 10px 10px 5px;}
 .mui-ziliao p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {margin-top: -42px;margin-right: 80px;}
 .title-e img.mui-media-people.mui-pull-left {width: 68px;}
-.mui-tita {margin-top: -10px;background-color: #fff;}
+.mui-tita {margin-top: -10px;background-color: #fff;margin-left: -10px;}
 p.people {color: #000;font-size: 16px;margin-left: 5px;line-height: 5px;}
 li.mui-table-view-cell.mui-media {list-style-type: none;}
 li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}
