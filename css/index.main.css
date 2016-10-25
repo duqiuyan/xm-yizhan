@@ -126,7 +126,7 @@ select#address {width: 21%;margin-right: 2px;}
 input[type="address"] {width: 64%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
 input[type="name"] {width: 58%;float: inherit;height: 30px;}
 span.danwei{margin-left: 5px;}
-.kit-item-people span {margin-top: -38px;}
+.kit-item-people span {margin-top: -31px;}
 .kit-item-people p{line-height: 20px;}
 
 /*添加其它*/
@@ -145,10 +145,28 @@ ul.mui-table-view.mui-message img {width: 24px;}
 span.xingbie {margin-left: 20px;}
 td span {line-height: 20px;}
 p.license-plate span{padding-left: 20px;line-height: 10px;}
-p.car-number {border-bottom: 1px solid #eee;padding-bottom: 10px;}
+p.car-number {border-bottom: 1px solid #eee;padding-bottom: 10px;white-space: initial;}
 .kit-item-people span {line-height: 20px;}
 p.D-address {white-space: normal;}
 ul.mui-table-view.mui-message,ul.mui-table-view.mui-table-view-chevron,ul.mui-table-view.mui-administrate {background-color: #fff;}
+.mui-time-icon img {width: 16px; padding-top: 7px;margin-left: 10px;float: left;}
+.mui-time-icon {background-color: #fff;height: 32px;border-radius: 16px;margin: 10px;width: 150px;text-align: center;}
+.mui-time-icon small {line-height: 36px;}
+.kit-item-visit span {margin-top: -45px;}
+.kit-item-visit .visit {border-bottom: 1px solid #eee;padding-bottom: 5px;}
+small.one,small.name {float: right;}
+small.distance {color: #ffa935;}
+input[type="new"] {width: 62%;float: right;height: 30px;}
+input[type="date"] {width: 60%;height: 30px;float: inherit;}
+
+
+
+
+
+
+
+
+
 
 
 

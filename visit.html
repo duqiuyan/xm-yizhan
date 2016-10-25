@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">拜访</h1>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--发现-->
+        <div id="tabbar-view-find" class="mui-control-content mui-active"> 
+            <div class="user-header-view">
+                <div class="user-topv">
+                    <div class="user-img"><img src="images/main.png" alt=""></div>
+                    <div class="user-longin">张三三</div>
+                    <p>LA98522<span class="xingbie">女</span></p>
+                </div>
+            </div>                        
+            <!--进行中模块-->
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <div class='mui-time-icon'><img src="images/time.png" alt="">
+                                <small>2015-12-13</small>
+                            </div>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="" href="">
+                                <!--文字信息-->
+                                    <div class="kit-item-visit">
+                                        <p class="visit">客户拜访<small class="name">陈双双12:20</small></p>
+                                        <p class="">上门拜访<small class="one">拜访类型：首次拜访</small>
+                                        </p>
+                                        <p class="">拜访地址：泉州刺柚路115号</p>
+                                        <p class="">距离拜访地址位置<small class="distance">2333</small>m</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class='mui-time-icon'><img src="images/time.png" alt="">
+                                <small>2015-12-12</small>
+                            </div>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="" href="">
+                                <!--文字信息-->
+                                    <div class="kit-item-visit">
+                                        <p class="visit">客户拜访<small class="name">陈双双12:20</small></p>
+                                        <p class="">上门拜访<small class="one">拜访类型：首次拜访</small>
+                                        </p>
+                                        <p class="">拜访地址：泉州刺柚路115号</p>
+                                        <p class="">距离拜访地址位置<small class="distance">2333</small>m</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--待接单模块-->
+            <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>日常保洁</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">待接单</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">待接单</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--待服务模块-->
+            <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">待服务</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">待服务</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+
+            <!--全部订单模块-->
+            <div id="fxItemView4" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx4" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">已服务</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                <input type="button" value="登记评价">
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">已取消</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="order_details.html">
+                                <!--文字信息-->
+                                <div class="title">
+                                   <span>空调清洗</span>
+                                   <small>(YY201609000799)</small>
+                                   <span class="ing">进行中</span>
+                                </div>
+                                <div class="kit-item-txt mui-media-body">
+                                <p class='mui-icon mui-icon-person'>沈衍月</p>
+                                
+                                <span  class='mui-icon'><img src="images/time.png" alt="">
+                                    <small>2016-09-02 15:20:00 周五</small>
+                                    <p>服务时长：4小时/人</p>
+                                </span>
+                                </div>
+                                <h5>合计：250.00</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+        var temp;
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-home" && temp != targetTab) {  
+                console.log("aaa");//调试信息
+                mui.openWindow({url:'index.html'});
+            }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
+                console.log("bbb");//调试信息
+                mui.openWindow({url:'index2.html'});
+            } 
+
+            temp = targetTab;
+        }); 
+
+    </script>
+
+</body>
+</html>

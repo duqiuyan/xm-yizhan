@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">汽车资料</h1>
+        <a class="btn-color mui-pull-right" href="">保存</a>
+    </header>
+
+    <script type="text/javascript">
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <div class="kit-item-new">
+                                        <p class="higher-new"><span style="color:red">&nbsp</span>会员有效期：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span>驾驶证姓名：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span>驾驶证号码：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span> 初领日期：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span>到期时间：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span>准驾车型：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                        <p class="higher-new"><span style="color:red">*</span>行驶证住址：
+                                            <input type="new" name="new" value=""> 
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+    </script>
+</body>
+</html>
