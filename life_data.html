@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">生活资料</h1>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--发现-->
+        <div id="tabbar-view-live" class="mui-control-content mui-active">
+            <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item mui-active" href="#fxItemView1">服务地址</a>
+                <a class="mui-control-item" href="#fxItemView2">家庭资料</a>
+                <a class="mui-control-item" href="#fxItemView3">日用品</a>
+                <a class="mui-control-item" href="#fxItemView4">消费习惯</a>
+                <a class="mui-control-item" href="#fxItemView5">其他</a>
+            </div>
+            
+            <!--服务地址模块-->
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <p>上次服务人员：袁利青</p>
+                                    <p>固定服务：杨洋</p>
+                                    <p>周五 13：00-15：00（已过期）</p>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="" href="customer_information.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="mui-icon mui-icon-person">周小姐：18750571544</p>
+                                        <span class="area">面积 150</span>
+                                        <p class="mui-icon mui-icon-location">【默认】泉州市刺桐路116号
+                                        </p>
+                                    </div>
+                                    <div class="house">
+                                        <a href=""><input type="button" value="房屋档案" ></a>
+                                        <a href=""><input type="button" value="地址详情" ></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="" href="customer_information.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="mui-icon mui-icon-person">周小姐：18750571544</p>
+                                        <span class="area">面积 150</span>
+                                        <p class="mui-icon mui-icon-location">【默认】泉州市刺桐路116号
+                                        </p>
+                                    </div>
+                                    <div class="house">
+                                        <a href=""><input type="button" value="房屋档案" ></a>
+                                        <a href=""><input type="button" value="地址详情" ></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="mui-address">
+                            <li class="mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="">
+                                    <p class="">添加收货地址</p>
+                                </a>
+                            </li>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--家庭资料模块-->
+            <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <p>上次服务人员：袁利青</p>
+                                    <p>固定服务：杨洋</p>
+                                    <p>周五 13：00-15：00（已过期）</p>
+                                </a>
+                            </li>
+                            <div class="mui-population">
+                                <p>老人数量:6人</p>
+                                <p>小孩数量:6人</p>
+                                <p>人口总数:6人</p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--日用品模块-->
+            <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <p>上次服务人员：袁利青</p>
+                                    <p>固定服务：杨洋</p>
+                                    <p>周五 13：00-15：00（已过期）</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--消费习惯模块-->
+            <div id="fxItemView4" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx4" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <p>上次服务人员：袁利青</p>
+                                    <p>固定服务：杨洋</p>
+                                    <p>周五 13：00-15：00（已过期）</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--其它模块-->
+            <div id="fxItemView5" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx5" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                         <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <p>上次服务人员：袁利青</p>
+                                    <p>固定服务：杨洋</p>
+                                    <p>周五 13：00-15：00（已过期）</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+
+</body>
+</html>

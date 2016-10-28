@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -17,8 +16,7 @@
        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
        if (restore) selObj.selectedIndex=0;
        }
-</script>
-
+    </script>
 </head>
 <body>
 
@@ -43,42 +41,48 @@
             <!--进行中模块-->
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
-                    <div class="mui-wrap">
-                        <p class="higher-type"><span style="color:red">*</span>上级类型：
-                            <select name="select" id="select_k1" class="">
-                                <option value="选择品牌">请选择</option>
-                                <option value="选择品牌1">选择类型1</option>
-                                <option value="选择品牌2">选择类型2</option>
-                            </select>
-                        </p>          
-                    </div>
-                    <div class="mui-wrap-a">
-                        <p class="higher-type">周边地址：
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">小区</option>
-                                <option value="选择品牌1">宝珊花园</option>
-                                <option value="选择品牌2">千亿山庄</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">街道</option>
-                                <option value="选择品牌1">街道1</option>
-                                <option value="选择品牌2">街道2</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">驿站</option>
-                                <option value="选择品牌1">驿站1</option>
-                                <option value="选择品牌2">驿站2</option>
-                            </select>
-                        </p>
-                        <input type="address" name="name" value="">          
-                    </div>
-                    <div class="mui-wrap-b">
-                        <p class="higher-type">类型名称：
-                            <input type="name" name="name" value=""> 
-                        </p>
-                        <p class="higher-type">距离小区：
-                            <input type="name" name="name" value=""><span class="danwei">(米)</span> 
-                        </p>         
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap">
+                                    <p class="higher-type"><span style="color:red">*</span>上级类型：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>          
+                                </div>
+                                <div class="mui-wrap-a">
+                                    <p class="higher-type">周边地址：
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">小区</option>
+                                            <option value="选择品牌1">宝珊花园</option>
+                                            <option value="选择品牌2">千亿山庄</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">街道</option>
+                                            <option value="选择品牌1">街道1</option>
+                                            <option value="选择品牌2">街道2</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">驿站</option>
+                                            <option value="选择品牌1">驿站1</option>
+                                            <option value="选择品牌2">驿站2</option>
+                                        </select>
+                                    </p>
+                                    <input type="address" name="name" value="">          
+                                </div>
+                                <div class="mui-wrap-b">
+                                    <p class="higher-type">类型名称：
+                                        <input type="name" name="name" value=""> 
+                                    </p>
+                                    <p class="higher-type">距离小区：
+                                        <input type="name" name="name" value=""><span class="danwei">(米)</span> 
+                                    </p>         
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
@@ -101,38 +105,43 @@
                 </div>
             </div>
             
-
             <!--待接单模块-->
             <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
-                    <div class="mui-wrap">
-                        <p class="higher-type"><span style="color:red">*</span>配套设施名称：
-                            <select name="select" id="select_k1" class="">
-                                <option value="选择品牌">请选择</option>
-                                <option value="选择品牌1">选择类型1</option>
-                                <option value="选择品牌2">选择类型2</option>
-                            </select>
-                        </p>          
-                    </div>
-                    <div class="mui-wrap-a">
-                        <p class="higher-type">设施地址：
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">小区</option>
-                                <option value="选择品牌1">宝珊花园</option>
-                                <option value="选择品牌2">千亿山庄</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">街道</option>
-                                <option value="选择品牌1">街道1</option>
-                                <option value="选择品牌2">街道2</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">驿站</option>
-                                <option value="选择品牌1">驿站1</option>
-                                <option value="选择品牌2">驿站2</option>
-                            </select>
-                        </p>
-                        <input type="address" name="name" value="">          
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap">
+                                    <p class="higher-type"><span style="color:red">*</span>配套设施名称：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>          
+                                </div>
+                                <div class="mui-wrap-b">
+                                    <p class="higher-type">设施地址：
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">小区</option>
+                                            <option value="选择品牌1">宝珊花园</option>
+                                            <option value="选择品牌2">千亿山庄</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">街道</option>
+                                            <option value="选择品牌1">街道1</option>
+                                            <option value="选择品牌2">街道2</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">驿站</option>
+                                            <option value="选择品牌1">驿站1</option>
+                                            <option value="选择品牌2">驿站2</option>
+                                        </select>
+                                    </p>
+                                    <input type="address" name="name" value="">          
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
@@ -157,45 +166,51 @@
             <!--待服务模块-->
             <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
-                    <div class="mui-wrap">
-                        <p class="higher-type"><span style="color:red">*</span>快递公司：
-                            <select name="select" id="select_k1" class="">
-                                <option value="选择品牌">请选择</option>
-                                <option value="选择品牌1">顺丰快递</option>
-                                <option value="选择品牌2">韵达快递</option>
-                                <option value="选择品牌2">申通快递</option>
-                                <option value="选择品牌2">中通快递</option>
-                                <option value="选择品牌2">天天快递</option>
-                            </select>
-                        </p>          
-                    </div>
-                    <div class="mui-wrap-a">
-                        <p class="higher-type">网点地址：
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">小区</option>
-                                <option value="选择品牌1">宝珊花园</option>
-                                <option value="选择品牌2">千亿山庄</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">街道</option>
-                                <option value="选择品牌1">街道1</option>
-                                <option value="选择品牌2">街道2</option>
-                            </select>
-                            <select name="select" id="address" class="address">
-                                <option value="选择品牌">驿站</option>
-                                <option value="选择品牌1">驿站1</option>
-                                <option value="选择品牌2">驿站2</option>
-                            </select>
-                        </p>
-                        <input type="address" name="name" value="">          
-                    </div>
-                    <div class="mui-wrap-b">
-                        <p class="higher-type">配送量：
-                            <input type="name" name="name" value=""><span class="danwei">(件)</span> 
-                        </p>
-                        <p class="higher-type">代收量：
-                            <input type="name" name="name" value=""><span class="danwei">(件)</span> 
-                        </p>         
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap">
+                                    <p class="higher-type"><span style="color:red">*</span>快递公司：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">顺丰快递</option>
+                                            <option value="选择品牌2">韵达快递</option>
+                                            <option value="选择品牌2">申通快递</option>
+                                            <option value="选择品牌2">中通快递</option>
+                                            <option value="选择品牌2">天天快递</option>
+                                        </select>
+                                    </p>          
+                                </div>
+                                <div class="mui-wrap-a">
+                                    <p class="higher-type">网点地址：
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">小区</option>
+                                            <option value="选择品牌1">宝珊花园</option>
+                                            <option value="选择品牌2">千亿山庄</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">街道</option>
+                                            <option value="选择品牌1">街道1</option>
+                                            <option value="选择品牌2">街道2</option>
+                                        </select>
+                                        <select name="select" id="address" class="address">
+                                            <option value="选择品牌">驿站</option>
+                                            <option value="选择品牌1">驿站1</option>
+                                            <option value="选择品牌2">驿站2</option>
+                                        </select>
+                                    </p>
+                                    <input type="address" name="name" value="">          
+                                </div>
+                                <div class="mui-wrap-b">
+                                    <p class="higher-type">配送量：
+                                        <input type="name" name="name" value=""><span class="danwei">(件)</span> 
+                                    </p>
+                                    <p class="higher-type">代收量：
+                                        <input type="name" name="name" value=""><span class="danwei">(件)</span> 
+                                    </p>         
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="mui-scroll">
                         <ul class="mui-table-view">

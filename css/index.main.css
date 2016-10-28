@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+  font-family: 'Hiragino Sans GB'; 
+  src: url('../fonts/mui.ttf');
+}
 /*顶部颜色*/
 .headerBar{background-color: #feaa36;}
 
@@ -26,7 +29,7 @@
 
 /**/
 .kitchen-view{background-color: white;}
-.kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; /*border: 1px solid #c8c7cc;*/border-radius: 5px;margin: 10px;}
+.kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; /*border: 1px solid #c8c7cc;*/border-radius: 8px;margin: 10px;}
 .kitchen-item .kit-item-img{  line-height: 82px;  max-width: 126px;  height: 82px;margin-right: 10px;}
 .kitchen-item .kit-item-txt{flex: 1;border-bottom: 1px solid #eee;width: 100%;}
 .kit-item-txt.mui-pull-left .cut p {font-size: 16px;line-height: 16px;}
@@ -42,13 +45,14 @@
 span.mui-icon p {margin-left: 16px;}
 
 /**/
-.title,.title-a,.title-b,.title-c,.title-na  {border-bottom: 1px solid #eee;padding-bottom:10px;}
+.title,.title-a,.title-b,.title-c,.title-na{border-bottom: 1px solid #eee;padding-bottom:10px;}
+.title-d {border-bottom: 1px solid #eee;} 
 .title-e {color: #333;margin-left: 10px;margin-right: 10px;}
 .title,.title-a,span {font-size: 16px;line-height: 36px; padding-bottom: 0px;}
 .title-b span {font-size: 16px;line-height: 36px;}
 .title-b ,.title-c{padding-bottom: 0px;}
-.title-b span p {font-size: 14px;line-height: 20px;color: #333;}
-.title-c span p {font-size: 14px;line-height: 18px;color: #8f8f94;}
+.title-b span p{font-size: 14px;line-height: 20px;color: #333;}
+.title-c span p,.title-d span p,.title-o span p {font-size: 14px;line-height: 18px;color: #8f8f94;white-space: normal;}
 .title-b small {font-size: 16px;font-weight: bold;}
 span.jieshao {margin-top: -75px;float: left;margin-left: 68px;}
 span.cut {float: left;}
@@ -97,7 +101,7 @@ p.number {color: #000;font-size: 16px;padding-bottom: 5px;}
 .mui-tita {margin-top: -10px;background-color: #fff;margin-left: -10px;}
 p.people {color: #000;font-size: 16px;margin-left: 5px;line-height: 5px;}
 li.mui-table-view-cell.mui-media {list-style-type: none;}
-li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}
+/*li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}*/
 p.zixun {color: #000;font-size: 16px;line-height: 5px;padding: 0px 5px;}
 p.jieshao {color: #000;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -10px;padding: 0px 5px;}
 
@@ -118,12 +122,12 @@ a.btn-color.mui-pull-right {margin-top: 13px; font-size: 14px;}
 /*添加其它*/
 .mui-wrap p,.mui-wrap-b p {color: #000;}
 .mui-wrap {border-bottom: 1px solid #eee;}
-.mui-wrap-a {border-bottom: 1px solid #eee;padding-bottom: 40px;}
-.mui-wrap-b {border-bottom: 1px solid #eee;}
+.mui-wrap-a {border-bottom: 1px solid #eee;padding-bottom: 10px;}
+/*.mui-wrap-b {border-bottom: 1px solid #eee;}*/
 .mui-wrap-c {border-bottom: 1px solid #eee;margin-top: -12px;}
 select#address {width: 21%;margin-right: 2px;}
 .mui-wrap-a p {color: #000;}
-input[type="address"] {width: 64%;margin-left: 94px;height: 30px;float: left;padding: 0px 5px;}
+input[type="address"] {width: 68%;margin-left: 85px;height: 30px;float: left;padding: 0px 5px;}
 input[type="name"] {width: 58%;float: inherit;height: 30px;}
 span.danwei{margin-left: 5px;}
 .kit-item-people span {margin-top: -31px;}
@@ -136,7 +140,7 @@ p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #eee;paddin
 ul.mui-table-view.mui-message img {width: 24px;}
 
 /*客户信息*/
-.message p {color: #000;font-size: 12px;margin: 3px 0px;line-height: 34px;border-right: 1px solid #eee;width: 25%;text-align: center;}
+.message p {color: #000;font-size: 12px; margin: 5px 0px; line-height: 18px;border-right: 1px solid #eee; width: 25%;text-align: center;padding: 5px 0px 0px 0px;}
 .message {display:  -webkit-box;background-color: #fff;}
 .message small {font-size: 12px;line-height: 40px;}
 .mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
@@ -158,6 +162,57 @@ small.one,small.name {float: right;}
 small.distance {color: #ffa935;}
 input[type="new"] {width: 62%;float: right;height: 30px;}
 input[type="date"] {width: 60%;height: 30px;float: inherit;}
+button.miu-comment { float: right;margin-top: -50px;}
+.kit-item-comment p {font-weight: bold;}
+p.mui-subject {font-weight: bold; border-bottom: 1px solid #eee;padding-bottom: 5px;}
+span.score {float: right;line-height: 24px;margin-right: 20px;}
+p.choice input {width: 12%;}
+p.choice-star input {width: 8%;}
+p.mui-subject-a {font-weight: bold;padding-bottom: 5px;}
+p.mui-subject-a small {font-weight: normal;}
+small.yes-no input {margin: 0px 5px;}
+.mui-input-row {background-color: #fff;margin: 10px 10px;}
+.remark p {font-weight: bold;color: #000;padding-left: 15px;}
+.view p {font-weight: bold;color: #000;padding-left: 15px;}
+.look-comment {margin-top: -45px;}
+p.user-star {margin-top: -15px;}
+.mui-comment-star {float: left;margin-left: 60px;margin-top: -100px;}
+.mui-comment-star p,.mui-comment-star span {font-size: 14px;}
+.mui-money p{color: #000;font-size: 14px;line-height: 18px;}
+.mui-money {float: right;margin-top: -88px;}
+span.work-money {font-size: 14px;color: red; line-height: 14px;}
+p.explain {font-size: 14px;}
+p.assess {border-bottom: 1px solid #eee;padding-bottom: 10px;}
+p.score {float: left;}
+p.visitors {float: right;}
+.coin-button {text-align: center;padding-left: 10px;padding-right: 10px;padding-bottom: 20px;}
+p.service img {width: 20px;}
+.button-comment {text-align: center;}
+a.btn-color-re.mui-icon.mui-icon-plusempty {color: #000;font-weight: bold;}
+.tianjia {margin-left: 10px;}
+li.mui-table-view-cell.mui-collapse {border-bottom: 1px solid #eee;}
+/*生活资料*/
+div#tabbar-view-live a {font-size: 14px;}
+span.area {float: right;}
+.mui-address { margin-left: -10px;margin-bottom: 10px;}
+.mui-population {background-color: #fff; display: flex;}
+.mui-population p {float: left;width: 33.3%;}
+.mui-population p {
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0px;
+    line-height: 18px;
+    border-right: 1px solid #eee;
+    width: 33.3%;
+    text-align: center;
+    padding: 14px 0px 8px 0px;
+}
+
+
+
+
+
+
 
 
 

@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+    </script>
 
 </head>
 <body>
@@ -35,29 +41,56 @@
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <!--文字信息-->
-                                    <div class="kit-item-new">
-                                        <p class="higher-new"><span style="color:red">&nbsp</span>会员有效期：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span>驾驶证姓名：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span>驾驶证号码：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span> 初领日期：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span>到期时间：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span>准驾车型：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
-                                        <p class="higher-new"><span style="color:red">*</span>行驶证住址：
-                                            <input type="new" name="new" value=""> 
-                                        </p>
+                                <div class="kit-item-new">
+                                    <p class="higher-new"><span style="color:red">&nbsp</span>会员有效期：
+                                        <input type="date" name="date" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>驾驶证姓名：
+                                        <input type="new" name="new" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>驾驶证号码：
+                                        <input type="new" name="new" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span> 初领日期：
+                                        <input type="date" name="date" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>到期时间：
+                                        <input type="date" name="date" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>准驾车型：
+                                        <input type="new" name="new" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>行驶证住址：
+                                        <input type="new" name="new" value=""> 
+                                    </p>
+                                </div>
+                            </li>
+                            <div class="tianjia">
+                               <a class="btn-color-re mui-icon mui-icon-plusempty" href="newly_added.html">添加车辆</a>
+                            </div>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="vehicle_details.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="license-plate">车牌：闽C72727<span >车主：陈双双</span></p>
+                                        <p>行驶证号：闽C72727</p>
+                                        <p>初登日期：2015-08-08</p>
+                                        <p >年检日期：2015-08-08</p>
+                                        <p>下次保养日期：2016-08-08</p>
                                     </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="vehicle_details.html">
+                                <!--文字信息-->
+                                    <div class="kit-item-people">
+                                        <p class="license-plate">车牌：闽C72727<span >车主：陈双双</span></p>
+                                        <p>行驶证号：闽C72727</p>
+                                        <p>初登日期：2015-08-08</p>
+                                        <p >年检日期：2015-08-08</p>
+                                        <p>下次保养日期：2016-08-08</p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>

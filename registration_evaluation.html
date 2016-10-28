@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">登记客户评价</h1>
+    </header>
+
+    <script type="text/javascript">
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div class="user-header-view">
+                <div class="user-topv">
+                    <div class="user-img"><img src="images/main.png" alt=""></div>
+                    <div class="user-longin">张三三</div>
+                    <p>LA98522<span class="xingbie">18695662525</span></p>
+                </div>
+            </div>
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                            <!--文字信息-->
+                                <div class="kit-item-people">
+                                    <p>单据编号：YY20111</p>
+                                    <p>回访的日期：2016-01-29 14:45:02</p>
+                                    <p class="car-number">联盟商编号：LQE </p>
+                                    <p>服务人员编号：789754</p>
+                                    <p>联盟商名称：蓝企鹅</p>
+                                    <p>服务人员姓名：范娇云</p>
+                                    <p>项目编号： 193</p>
+                                    <p>项目名称：日常保洁</p>
+                                    <p>回访方式：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">上门回访</option>
+                                            <option value="选择品牌2">电话回访</option>
+                                        </select>
+                                    </p>
+                                    <p class="assess">评价类型：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="explain">填表说明:为了提高蓝企鹅保洁服务质量，深度挖掘保洁服务过程中的隐性问题，特由蓝企鹅客服人员根据如下内容进行调查、访问</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a href="">
+                                <!--文字信息-->
+                                    <div class="kit-item-comment">
+                                        <p class="score">得分：</p>
+                                        <p class="visitors">回访者：陈建元</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject">1、大姐服务质量<span class="score">0</span></p>
+                                    <p>玻璃清洗的怎么样呀？是否有水渍呢？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                    <p>厨房的卫生死角是否有清洗干净？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                    <p>卫生间的马桶是否有清洗干净？有水渍吗？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                    <p>打扫速度如何？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject">2、注意事项<span class="score">0</span></p>
+                                    <p>大姐打扫前是否有提醒您贵重物品要收好？</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                    <p>服务结束后物品摆放您是否满意?</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                    <p>服务期间大姐借用您家里的物品是否有征得您的同意？</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                    <p>服务结束后，大姐是否有请您检查工具包？</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                    <p>是否穿着公司制服，着装是否整齐?</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                    <p>服务结束后，是否有帮您把垃圾带出去？</p>
+                                        <p class="choice"><input name="checkbox2" value="" type="checkbox">优
+                                            <input name="checkbox2" value="" type="checkbox">良<input name="checkbox2" value="" type="checkbox">差
+                                        </p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject">3、大姐服务态度<span class="score">0</span></p>
+                                    <p>服务前是否明确服务价格?</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                    <p>服务期间的态度 怎么样呢？是否爱发牢骚？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                    <p>服务期间是否有主动向您索要物品等不合理行为？</p>
+                                        <p class="choice"><input name="checkbox1" value="" type="checkbox">非常好
+                                        <input name="checkbox1" value="" type="checkbox">好<input name="checkbox1" value="" type="checkbox">很好<input name="checkbox1" value="" type="checkbox">一般</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject-a">4、工作技能<span class="score">0</span></p>
+                                        <p class="choice-star"><input name="checkbox1" value="" type="checkbox">一星<input name="checkbox1" value="" type="checkbox">二星<input name="checkbox1" value="" type="checkbox">三星<input name="checkbox1" value="" type="checkbox">四星<input name="checkbox1" value="" type="checkbox">五星</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject-a">5、服务礼仪<span class="score">0</span></p>
+                                        <p class="choice-star"><input name="checkbox1" value="" type="checkbox">一星<input name="checkbox1" value="" type="checkbox">二星<input name="checkbox1" value="" type="checkbox">三星<input name="checkbox1" value="" type="checkbox">四星<input name="checkbox1" value="" type="checkbox">五星</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject-a">6、服务质量<span class="score">0</span></p>
+                                        <p class="choice-star"><input name="checkbox1" value="" type="checkbox">一星<input name="checkbox1" value="" type="checkbox">二星<input name="checkbox1" value="" type="checkbox">三星<input name="checkbox1" value="" type="checkbox">四星<input name="checkbox1" value="" type="checkbox">五星</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject-a">7、服务态度<span class="score">0</span></p>
+                                        <p class="choice-star"><input name="checkbox1" value="" type="checkbox">一星<input name="checkbox1" value="" type="checkbox">二星<input name="checkbox1" value="" type="checkbox">三星<input name="checkbox1" value="" type="checkbox">四星<input name="checkbox1" value="" type="checkbox">五星</p>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="kit-item-subject">
+                                    <p class="mui-subject-a">是否增加其他服务项目：<small class="yes-no"><input name="checkbox1" value="" type="checkbox">是<input name="checkbox1" value="" type="checkbox">否</small></p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="remark">
+                    <p>备注：</p>
+                    <div class="mui-input-row">
+                        <textarea id="textarea" rows="5" placeholder=""></textarea>
+                    </div>
+                </div>
+                <div class="view">
+                    <p>您对蓝企鹅公司的整体服务评价及建议：</p>
+                    <div class="mui-input-row">
+                        <textarea id="textarea" rows="5" placeholder=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="coin-button">
+                <a href=""><input type="button" name="Submit" value="提交"></a>
+                <a href=""><input type="button" name="Submit" value="投诉"></a>
+                <a href=""><input type="button" name="Submit" value="重置"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+
+</body>
+</html>
