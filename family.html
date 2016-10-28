@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+</script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">地址详情</h1>
+        <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href=""></a>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--发现-->
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <div class="mui-population">
+                                <p>老人数量:6人</p>
+                                <p>小孩数量:6人</p>
+                                <p>人口总数:6人</p>
+                            </div>
+                            <div class="mui-family-information">
+                                <p>客户家庭成员信息</p>
+                            </div>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="">
+                                    <div class="family-information">
+                                        <p class="information">陈双双<small>女</small><small>15252525252</small><small class="relation">母女</small></p>
+                                    </div>
+                                </a>
+                                <a class="mui-navigate-right" href="">
+                                    <div class="family-information">
+                                        <p class="information">张&nbsp&nbsp&nbsp三<small>男</small><small>15252525252</small><small class="relation">母子</small></p>
+                                    </div>
+                                </a>
+                                <a class="mui-navigate-right" href="">
+                                    <div class="family-information">
+                                        <p class="information">李&nbsp&nbsp&nbsp四<small>男</small><small>15252525252</small><small class="relation">兄妹</small></p>
+                                    </div>
+                                </a>
+                                <a class="mui-navigate-right" href="">
+                                    <div class="family-information">
+                                        <p class="information">李&nbsp&nbsp&nbsp四<small>男</small><small>15252525252</small><small class="relation">兄妹</small></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    mui.init({
+        swipeBack: false
+    });
+</script>
+</body>
+</html>
