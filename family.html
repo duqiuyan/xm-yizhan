@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -12,12 +11,6 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
-    <script type="text/javascript">
-        function MM_jumpMenu(targ,selObj,restore){ //v3.0
-       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-       if (restore) selObj.selectedIndex=0;
-       }
-</script>
 
 </head>
 <body>
@@ -25,50 +18,90 @@
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">地址详情</h1>
-        <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href=""></a>
+        <h1 class="mui-title">家庭资料</h1>
+        <a class="btn-color mui-pull-right" href="">修改</a>
     </header>
 
     <!--内容区域-->
     <div class="mui-content">
 
-        <!--发现-->
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
-                            <div class="mui-population">
-                                <p>老人数量:6人</p>
-                                <p>小孩数量:6人</p>
-                                <p>人口总数:6人</p>
-                            </div>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap-c">
+                                    <p>家庭成员数量：5个</p>
+                                    <p>住家老人数量：2个</p>
+                                    <p>孩子数量：1个</p>
+                                </div>
+                                <div class="mui-wrap-c">
+                                    <p>家庭成员组成：父母夫妻孩子</p>
+                                    <p>家庭分工：男主外，女主内</p>
+                                    <p>购菜地点：菜市场</p>
+                                    <p>家庭煮饭人员：奶奶</p>
+                                    <p>孩子抚养人：奶奶</p>
+                                </div>
+                                <div class="mui-wrap-c">
+                                    <p>主要劳动力年龄段：31-35</p>
+                                    <p>家庭主要经济来源：丈夫</p>
+                                    <p>丈夫职业：医生</p>
+                                    <p>丈夫就业单位：泉州市正骨医院</p>
+                                </div>
+                                <div class="mui-wrap-o">
+                                    <p>小孩购买保险险种：教育金</p>
+                                    <p>中年人购买保险险种：重大医疗险</p>
+                                    <p>老人购买保险险种：健康险</p>
+                                    <p>家庭成员购买保险公司：平安人寿</p>
+                                </div>
+                            </li>
                             <div class="mui-family-information">
-                                <p>客户家庭成员信息</p>
+                                <p>家庭成员信息</p>
                             </div>
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <a class="mui-navigate-right" href="">
+                                <a class="mui-navigate-right" href="family_Information.html">
                                     <div class="family-information">
                                         <p class="information">陈双双<small>女</small><small>15252525252</small><small class="relation">母女</small></p>
                                     </div>
                                 </a>
-                                <a class="mui-navigate-right" href="">
+                                <a class="mui-navigate-right" href="family_Information.html">
                                     <div class="family-information">
                                         <p class="information">张&nbsp&nbsp&nbsp三<small>男</small><small>15252525252</small><small class="relation">母子</small></p>
                                     </div>
                                 </a>
-                                <a class="mui-navigate-right" href="">
+                                <a class="mui-navigate-right" href="family_Information.html">
                                     <div class="family-information">
                                         <p class="information">李&nbsp&nbsp&nbsp四<small>男</small><small>15252525252</small><small class="relation">兄妹</small></p>
                                     </div>
                                 </a>
-                                <a class="mui-navigate-right" href="">
+                                <a class="mui-navigate-right" href="family_Information.html">
                                     <div class="family-information">
                                         <p class="information">李&nbsp&nbsp&nbsp四<small>男</small><small>15252525252</small><small class="relation">兄妹</small></p>
                                     </div>
+                                </a>
+
+                            <!--<button type="button" class="mui-btn-yellow">
+                                    <a href="family.html">
+                                        查看更多
+                                    </a>
+                                </button>-->
+                            </li>
+                        </ul>
+                        <div class="mui-address">
+                            <li class="mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="family_information_a.html">
+                                    <p class="">添加老人信息</p>
                                 </a>
                             </li>
-                        </li>
+                        </div>
+                        <div class="mui-address">
+                            <li class="mui-table-view-cell mui-media">
+                                <a class="mui-navigate-right" href="family_information_b.html">
+                                    <p class="">添加小孩信息</p>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>

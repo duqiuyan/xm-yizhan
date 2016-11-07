@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+</script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">家庭成员信息</h1>
+        <a class="btn-color mui-pull-right" href="">修改</a>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap-c">
+                                    <p class="higher-new"><span style="color:red">*</span>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="relation"><span style="color:red">*</span>关&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp系：
+                                        <input type="relation" name="relation" value=""> 
+                                    </p>
+                                    <p class="higher-new"><span style="color:red">*</span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：
+                                        <input name="radio1" type="radio"><label>男</label>
+                                        <input name="radio1" type="radio"><label>女</label>   
+                                    </p>         
+                                </div>
+                                <div class="mui-wrap">
+                                    <p class="birth">出生日期：
+                                        <input type="birth" name="birth" value=""> 
+                                    </p>
+                                    <p class="relation">婚姻状态：
+                                        <input type="relation" name="relation" value=""> 
+                                    </p>
+                                    <p class="higher-new">联系电话：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="higher-new">文化程度：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>          
+                                </div>
+                                <div class="mui-people-name">
+                                    <p class="higher-new">Q&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspQ：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="higher-new">微&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp博：
+                                        <input type="people-name" name="people-name" value=""> 
+                                    </p>
+                                    <p class="higher-new">微&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp信：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="higher-new">工作单位/学校：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p> 
+                                    <p class="higher-new">性格特点：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="higher-new">日常娱乐：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="higher-new">兴趣爱好：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>         
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+</body>
+</html>

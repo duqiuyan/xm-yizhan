@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+</script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">房屋档案管理</h1>
+        <a class="btn-color mui-pull-right" href="">修改</a>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap-o">
+                                    <p class="building">房屋结构：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">购房年限：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">房屋面积：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">墙壁装修材料：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">墙壁装修材料：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">房间数量：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">客厅数量：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">厨房数量：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">阳台数量：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">卫生间数量：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                    <p class="years">进门需要换鞋：
+                                        <select name="select" id="select_k1" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </li>
+                            <div class="saloon">
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>客厅信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>沙发</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="sofa.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="sofa.html">
+                                                    <p class="building">沙发价格间区：5000-10000
+                                                    </p>
+                                                    <p class="years">沙发面料：皮沙发
+                                                    </p>
+                                                    <p class="years">保养的频率：一年一次
+                                                    </p>
+                                                    <p class="years">保养人员：商家配送保养
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>灯饰</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="lighting.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="lighting.html">
+                                                    <p class="building">灯饰类型：吊灯
+                                                    </p>
+                                                    <p class="years">灯饰材料：水晶灯
+                                                    </p>
+                                                    <p class="years">清洗频率：一年一次
+                                                    </p>
+                                                    <p class="years">清洗人员：自己清洗
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>电视机</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="television.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="television.html">
+                                                    <p class="building">电视机款式：嵌壁式
+                                                    </p>
+                                                    <p class="years">电视机品牌：索尼
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">是否在保修期：是
+                                                    </p>
+                                                    <p class="years">电视机通常找哪里维修：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>空调</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="air_conditioning.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="air_conditioning.html">
+                                                    <p class="building">空调款式：挂式
+                                                    </p>
+                                                    <p class="years">空调品牌：海尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">空调保修期：保修期内
+                                                    </p>
+                                                    <p class="years">空调维修商：联系商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>净化器</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="purifier.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="purifier.html">
+                                                    <p class="years">净化器品牌：索尼
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">是否在保修期：是
+                                                    </p>
+                                                    <p class="years">净化器维修商：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>饮水机</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="water_dispenser.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="water_dispenser.html">
+                                                    <p class="years">饮水机品牌：索尼
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">是否在保修期：是
+                                                    </p>
+                                                    <p class="years">饮水机维修商：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>其它</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="other_room.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="other_room.html">
+                                                    <p class="building">餐桌材料：大理石
+                                                    </p>
+                                                    <p class="years">客厅窗帘材料：全棉平绒
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>客厅其它电器添加</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="add_electrical.html"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>厨房信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>油烟机</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="cooker_hood.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="cooker_hood.html">
+                                                    <p class="building">油烟机分类：中式油烟机
+                                                    </p>
+                                                    <p class="years">油烟机品牌：海尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                    <p class="years">是否在保修期内：是
+                                                    </p>
+                                                    <p class="years">维修是找哪里维修：外面的维修点
+                                                    </p>
+                                                    <p class="building">清洗频率：两个月一次
+                                                    </p>
+                                                    <p class="years">清洗是找哪里：外面的服务公司
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>燃气灶</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="hotplate.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="hotplate.html">
+                                                    <p class="building">燃气灶品牌：西门子
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                    <p class="years">清洗频率：一年一次
+                                                    </p>
+                                                    <p class="years">清洗人员：自己清洗
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>煮饭电器</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="appliances.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="appliances.html">
+                                                    <p class="building">煮饭电器品牌：电饭煲
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>电饭煲</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="rice_cooker.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="rice_cooker.html">
+                                                    <p class="building">电饭煲品牌：苏泊尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>电压力锅</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="electric_pressure_cooker.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="electric_pressure_cooker.html">
+                                                    <p class="building">电压力锅品牌：苏泊尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>微波炉</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="microwave_oven.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="microwave_oven.html">
+                                                    <p class="building">微波炉品牌：电饭煲
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>电冰箱</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="freezer.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="freezer.html">
+                                                    <p class="building">电冰箱品牌：海尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                    <p class="years">是否在保修期内：是
+                                                    </p>
+                                                    <p class="years">通常找哪里维修：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>厨房用品</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="articles.html"></a> 
+                                                <a class="mui-icon mui-icon-forward" href="bathrooms.html">
+                                                    <p class="years">用品：用品1</p>
+                                                    <p class="years">品牌：品牌1</p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>其它</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href=""></a>
+                                                <a class="mui-icon mui-icon-forward" href="">
+                                                    <p class="building">生活设施坏了找哪里修：物业
+                                                    </p>
+                                                    <p class="years">管道坏了是找哪里修：物业
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>厨房其它电器添加</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="add_kitchen.html"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>卫生间信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>马桶</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="closestool.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="closestool.html">
+                                                    <p class="building">马桶款式：普通坐式马桶
+                                                    </p>
+                                                    <p class="years">马桶品牌：九牧
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>热水器</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="heater.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="heater.html">
+                                                    <p class="building">热水器款式：太阳能
+                                                    </p>
+                                                    <p class="years">热水器品牌：史密斯
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                    <p class="years">清洗频率：六个月一次
+                                                    </p>
+                                                    <p class="years">是否在保修期内：是
+                                                    </p>
+                                                    <p class="years">通常找哪里维修：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>洗衣机</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="washer.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="washer.html">
+                                                    <p class="building">洗衣机品牌：海尔
+                                                    </p>
+                                                    <p class="years">购买年限：1-3年
+                                                    </p>
+                                                    <p class="years">清洗频率：六个月一次
+                                                    </p>
+                                                    <p class="years">是否在保修期内：是
+                                                    </p>
+                                                    <p class="years">通常找哪里维修：商家
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>卫生间用品</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="bathrooms.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="bathrooms.html">
+                                                    <p class="years">用品：用品1</p>
+                                                    <p class="years">品牌：品牌1</p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>卫生间其它电器添加</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="other_bathroom.html"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>卧室信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>窗帘</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="blind.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="blind.html">
+                                                    <p class="building">卧室窗帘材料：亚麻
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>电脑</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="computer.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="computer.html">
+                                                    <p class="building">电脑品牌：惠普
+                                                    </p>
+                                                    <p class="years">电脑款式：超极本
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                    <p class="years">使用频率：每天
+                                                    </p>
+                                                    <p class="years">电脑系统：Win10
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>小电器</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="small_appliances.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="small_appliances.html">
+                                                    <p class="building">使用频率：经常
+                                                    </p>
+                                                    <p class="years">购买年限：1-5年
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>卧室其他电器</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="other_bedroom.html"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>宠物信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>狗</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="pet.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="pet.html">
+                                                    <p class="building">宠物粮食品牌：皇家
+                                                    </p>
+                                                    <p class="years">洗澡频率：一天一次
+                                                    </p>
+                                                    <p class="years">打疫苗针期限：3个月一次
+                                                    </p>
+                                                    <p class="years">宠物散步周期：一天一次
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>家里其他宠物信息</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="other_pets.html"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mui-table-view-cell mui-collapse">
+                                    <a class="mui-navigate-right" href="#">
+                                        <h6>其他信息</h6>
+                                    </a>
+                                    <ul class="mui-table-view mui-table-view-information">
+                                        <li class="kitchen-item mui-table-view-cell mui-information">
+                                            <div class="mui-wrap-k">
+                                                <h4>地板</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="floor.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="floor.html">
+                                                    <p class="building">地板材料：木地板
+                                                    </p>
+                                                    <p class="years">范围：卧室、客厅
+                                                    </p>
+                                                    <p class="years">地毯面积：客厅
+                                                    </p>
+                                                    <p class="years">地毯材质：纯羊毛
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-k">
+                                                <h4>玻璃</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="glass.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="glass.html">
+                                                    <p class="building">玻璃类型：透光
+                                                    </p>
+                                                    <p class="years">玻璃高度：3mm
+                                                    </p>
+                                                    <p class="years">玻璃厚度：5mm
+                                                    </p>
+                                                    <p class="years">玻璃面积：10块玻璃以内
+                                                    </p>
+                                                </a>
+                                            </div>
+<!--                                             <div class="mui-wrap-k">
+                                                <h4>衣服着装</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="dress.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="dress.html">
+                                                    <p class="building">男士穿着品牌：品牌1 </p>
+                                                    <p class="years">女士穿着品牌：品牌2</p>
+                                                </a>
+                                            </div> -->
+                                            <div class="mui-wrap-k">
+                                                <h4>其他</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="else.html"></a>
+                                                <a class="mui-icon mui-icon-forward" href="else.html">
+                                                    <p class="building">客户家是否有健身器材：是
+                                                    </p>
+                                                    <p class="years">家庭成员会做定期体检吗：是
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="mui-wrap-o">
+                                                <h4>其他添加</h4>
+                                                <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href=""></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+</body>
+</html>

@@ -24,7 +24,6 @@
 .fr{float: right}
 
 /*首页－顶部三个菜单视图样式*/
-/*.mui-control-content {background-color: white;}*/
 .mui-control-content .mui-loading { margin-top: 150px;}
 
 /**/
@@ -43,8 +42,6 @@
 .mui-slider1 .mui-slider-group .mui-slider-item img {width: 100%;}
 .kit-item-txt.mui-media-body img {width: 16px;}
 span.mui-icon p {margin-left: 16px;}
-
-/**/
 .title,.title-a,.title-b,.title-c,.title-na{border-bottom: 1px solid #eee;padding-bottom:10px;}
 .title-d {border-bottom: 1px solid #eee;} 
 .title-e {color: #333;margin-left: 10px;margin-right: 10px;}
@@ -65,10 +62,9 @@ span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 .fx-item-tt{color: #333333;font-size: 1.2rem;}
 .fx-item-ds{color: #939393;font-size: 0.8rem;margin-top: 5px;}
 .fx-item-view{height:auto;}
-/*.fx-scroll-my{background-color: white;}*/
 
-/*我的页面*/
-.user-header-view{background-color:#ffa935;height:150px;display: -webkit-flex;}
+/*个人中心页面*/
+.user-header-view{background-color:#ffa935;height:150px;display: -webkit-flex; /*background-image: url(../images/banner01.png)*/}
 .user-header-view .user-topv{text-align: center;width: 80%; height: 140px;align-self:center;margin: 0px auto;}
 .user-img{width: 80px; height: 80px; margin: 0 auto; text-align: center;}
 .user-topv img{width: 72px;display: -webkit-flex;border: 1px solid #ffa935;border-radius: 40px;}
@@ -101,9 +97,8 @@ p.number {color: #000;font-size: 16px;padding-bottom: 5px;}
 .mui-tita {margin-top: -10px;background-color: #fff;margin-left: -10px;}
 p.people {color: #000;font-size: 16px;margin-left: 5px;line-height: 5px;}
 li.mui-table-view-cell.mui-media {list-style-type: none;}
-/*li.kitchen-item.mui-table-view-cell.mui-media h5 {float: right;}*/
 p.zixun {color: #000;font-size: 16px;line-height: 5px;padding: 0px 5px;}
-p.jieshao {color: #000;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -10px;padding: 0px 5px;}
+p.jieshao {color: #000;font-size: 16px;margin-left: 10px; margin-right: 10px;line-height: 40px;font-weight: bold; margin-top: -7px;padding: 0px 5px;}
 
 /*驿站小区资讯*/
 span.mui-name {line-height: 20px;}
@@ -117,14 +112,15 @@ p.mui-name-a small {padding-left: 30px;}
 .kit-item-name {border-bottom: 1px solid #eee;padding-bottom: 5px;}
 input[type=sub] {color: #fff;border: 1px solid #ffa935;background-color: #ffa935;}
 input[type=sub] {margin-top: 10px;font-size: 14px;line-height: 28px;margin-bottom: 0;text-align: center;color: #ffa935;border: 1px solid #ffa935;border-radius: 3px;background-color: #fff;margin-right: 15px;width: 80px;float: inherit;}
-a.btn-color.mui-pull-right {margin-top: 13px; font-size: 14px;}
+a.btn-color.mui-pull-right{margin-top: 13px; font-size: 14px;}
+a.btn-me.mui-pull-right {margin-top: 10px;font-size: 14px;line-height: 26px;}
+a.btn-me.mui-pull-right {border-radius: 5px;background-color: rgba(0,0,0,0.1);width: 62px;height: 24px;text-align: center;}
 
 /*添加其它*/
 .mui-wrap p,.mui-wrap-b p {color: #000;}
 .mui-wrap {border-bottom: 1px solid #eee;}
 .mui-wrap-a {border-bottom: 1px solid #eee;padding-bottom: 10px;}
-/*.mui-wrap-b {border-bottom: 1px solid #eee;}*/
-.mui-wrap-c {border-bottom: 1px solid #eee;margin-top: -12px;}
+.mui-wrap-c {border-bottom: 1px solid #eee;margin-top: 0px;}
 select#address {width: 21%;margin-right: 2px;height: 32px;}
 .mui-wrap-a p {color: #000;}
 input[type="address"] {width: 68%;margin-left: 85px;height: 32px;float: left;padding: 0px 5px;}
@@ -134,7 +130,7 @@ span.danwei{margin-left: 5px;}
 .kit-item-people p{line-height: 20px;}
 
 /*添加其它*/
-input[type="people-name"] {width: 100%;float: inherit;height: 32px;}
+input[type="people-name"],input[type="relation"],input[type="birth"]{width: 100%;float: inherit;height: 32px;}
 p.people-name select {width: 100%;}
 p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #eee;padding-bottom: 10px;}
 ul.mui-table-view.mui-message img {width: 24px;}
@@ -161,7 +157,7 @@ ul.mui-table-view.mui-message,ul.mui-table-view.mui-table-view-chevron,ul.mui-ta
 small.one,small.name {float: right;}
 small.distance {color: #ffa935;}
 input[type="new"] {width: 62%;float: right;height: 32px;}
-input[type="date"] {width: 60%;height: 32px;float: inherit;}
+input[type="date"] {width: 100%;height: 32px;float: inherit;}
 button.miu-comment { float: right;margin-top: -50px;}
 .kit-item-comment p {font-weight: bold;}
 p.mui-subject {font-weight: bold; border-bottom: 1px solid #eee;padding-bottom: 5px;}
@@ -172,6 +168,7 @@ p.mui-subject-a {font-weight: bold;padding-bottom: 5px;}
 p.mui-subject-a small {font-weight: normal;}
 small.yes-no input {margin: 0px 5px;}
 .mui-input-row {background-color: #fff;margin: 10px 10px;}
+.mui-input-row-a {background-color: #fff;border-bottom: 1px solid #eee;}
 .remark p {font-weight: bold;color: #000;padding-left: 15px;padding-top: 10px;}
 .view p {font-weight: bold;color: #000;padding-left: 15px;}
 .look-comment {margin-top: -45px;}
@@ -190,14 +187,14 @@ p.service img {width: 20px;}
 .button-comment {text-align: center;}
 a.btn-color-re.mui-icon.mui-icon-plusempty {color: #000;font-weight: bold;}
 .tianjia {margin-left: 10px;}
+.things{margin-left: 10px;margin-bottom: 10px;}
+.things p {font-size: 16px;font-weight: bold;margin-left: 10px;}
 li.mui-table-view-cell.mui-collapse {border-bottom: 1px solid #eee;}
 /*生活资料*/
-div#segmentedControl1 a {font-size: 14px;}
+div#segmentedControl1 a {font-size: 16px;}
 span.area {float: right;}
 .mui-address {margin-bottom: 10px;background-color: #fff;}
-.mui-population {background-color: #fff; display: flex;}
-.mui-population p {float: left;width: 33.3%;}
-.mui-population p {color: #000;font-size: 16px;margin: 8px 0px; line-height: 18px;border-right: 1px solid #eee;width: 33.3%;text-align: center;padding: 5px 0px 3px 0px;}
+.mui-population {background-color: #fff; }
 .family-information {border-bottom: 1px solid #eee;}
 .family-information p {margin-top: 12px; margin-bottom: 8px;}
 p.information small { margin-left: 18px;font-size: 16px;}
@@ -211,11 +208,31 @@ ul.mui-table-view.mui-chevron img {width: 40px;}
 ul.mui-table-view.mui-chevron{background-color: #fff;}
 ul.mui-table-view.mui-notice {background-color: #fff;}
 input[type="living"] { width: 14%;float: initial;height: 32px;}
-select#select_k2 {width: 45%;}
+select#select_k2 {width: 45%; height: 32px;}
 select#details {width: 32%;height:32px;}
 input[type="details"] {width: 100%; height: 32px;}
 button.mui-btn-address {color: #fff;border: 1px solid #ffa935;background-color: #ffa935; display: block;margin: 30px auto;padding: 5px 10px; float: none;width: 80%;text-align: center;}
+input[type="area"] ,input[type="height"]{ width: 20%;float: inherit;}
+small.height {margin-left: 12px;}
+.saloon {background-color: #fff;margin-left: 10px; margin-right: 10px;border-radius: 5px;margin-bottom: 10px;}
+.mui-wrap-k a ,.mui-wrap-o a{color: #000; margin-top: -26px;}
+.mui-wrap-k {border-bottom: 1px solid #eee;}
+a.btn-color-w.mui-icon.mui-icon-plusempty.mui-pull-right {font-weight: bold;}
 
-
-
-
+/*客户拜访*/
+p.picture {font-size: 14px;color: #ffa935;}
+p.picture img {width: 58px;}
+.title-o p { white-space: initial;line-height: 30px;}
+.title-t,.title-o {border-bottom: 1px solid #eee;}
+.title-t span,.title-o span {line-height: 20px;}
+.feedback .image-list {background-size: cover;overflow: hidden;margin-top: -5px;}
+.feedback .image-item.space {border: none;}
+.feedback .image-item {width: 65px;height: 65px;background-size: 100% 100%;display: inline-block;position: relative;border-radius: 5px;margin-right: 10px;margin-bottom: 10px;border: solid 1px #e8e8e8;vertical-align: top;}
+.feedback .image-item.space .image-close {display: none;}
+.feedback .image-item .image-close { position: absolute; display: inline-block;right: -6px;top: -6px;width: 20px;height: 20px;text-align: center;line-height: 20px;border-radius: 12px;background-color: #FF5053;color: #f3f3f3; border: solid 1px #FF5053;font-size: 9px;font-weight: 200;z-index: 1;}
+.image-close img { width: 58px;margin-right: 10px;}
+p.sy small {font-size: 14px;color: #ffa935}
+p.sy {font-size: 14px;margin-left: 85px;margin-top: -37px;}
+input[type="people-mianji"] {width: 75%;height: 32px;float: inherit;}
+input[type="people-village"] {width: 50%;float: inherit;height: 32px;}
+label {margin-right: 20px;}

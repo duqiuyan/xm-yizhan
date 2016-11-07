@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驿站管理系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        function MM_jumpMenu(targ,selObj,restore){ //v3.0
+       eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+       if (restore) selObj.selectedIndex=0;
+       }
+</script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">查看小区信息</h1>
+    </header>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="mui-table-view">
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <div class="mui-wrap-c">
+                                    <p class="people-name">小区名称：东海湾御文阁
+                                    </p>
+                                    <p class="people-name">驿站名称：东方银座驿站
+                                    </p>
+                                    <p class="higher-new">楼盘名称：东方银座花园
+                                    </p>
+                                    <p class="higher-new">楼盘级别：高层电梯
+                                    </p> 
+                                </div>
+                                <div class="mui-wrap-c">
+                                    <p class="people-name">合作状态：未合作
+                                    </p>
+                                    <p class="people-name">周边消费水平：中
+                                    </p>         
+                                </div>
+                                <div class="mui-wrap">
+                                    <p class="higher-new">业务联系人：张某某
+                                    </p>
+                                    <p class="higher-new">联系人电话：18888888888
+                                    </p>
+                                    <p class="higher-new">办公面积：50（平方）
+                                    </p> 
+                                    <p class="higher-new">办公位置：刺桐路116号
+                                    </p>         
+                                </div>
+                                <div class="mui-wrap">
+                                    <p class="higher-new">小区总户数：100
+                                    </p> 
+                                    <p class="higher-new">已&nbsp入&nbsp户&nbsp数：12
+                                    </p> 
+                                    <p class="higher-new">入&nbsp&nbsp&nbsp住&nbsp&nbsp&nbsp率：12% 
+                                    </p> 
+                                    <p class="higher-new">物&nbsp业&nbsp人&nbsp数：12 
+                                    </p>       
+                                </div>
+                                <div class="mui-people-name">
+                                    <p class="higher-new">业务喜好和需求：
+                                    </p>
+                                    <p class="higher-new">建议/适合推广产品：
+                                    </p>
+                                    <p class="higher-new">其他需求：
+                                    </p>
+                                    <p class="higher-new">备注：
+                                    </p>          
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+    </script>
+</body>
+</html>

@@ -442,7 +442,7 @@ h1,h2,h3,h4,h5,h6 {
 .mui-h2,h2 {
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
+    padding-left: 20px;
     padding-top: 10px;
 }
 
@@ -454,8 +454,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .mui-h4,h4 {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    line-height: 32px;
+    margin-top: 2px;
+    color: #000;
 }
 
 .mui-h5,h5 {
@@ -466,9 +470,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .mui-h6,h6 {
-    font-size: 12px;
-/*    font-weight: 400;*/
-    color: #8f8f94
+    font-size: 16px;
+    color: #000;
 }
 
 p {
@@ -1798,7 +1801,8 @@ img.mui-media-people.mui-pull-left {
 }
 
 .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
-    margin-top: -8px;
+    margin-top: -5px;
+    margin-left: 10px;
 }
 
 .mui-table-view-radio .mui-table-view-cell {
@@ -1892,9 +1896,9 @@ img.mui-media-people.mui-pull-left {
     padding-left: 58px
 }
 
-.mui-table-view-cell.mui-active {
+/*.mui-table-view-cell.mui-active {
     background-color: #eee
-}
+}*/
 
 .mui-table-view-cell:last-child:after,.mui-table-view-cell:last-child:before {
     height: 0
@@ -2067,9 +2071,10 @@ p.dizhi {
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
-    border-bottom: 1px solid #c8c7cc;
     line-height: 36px;
-    padding: 0px 15px;
+    padding: 7px 15px 5px;
+    background-color: #fff;
+    margin-top: 0px;
 }
 
 .mui-tit {
@@ -2167,7 +2172,9 @@ p.dizhi {
 }
 
 .mui-table-view-cell.mui-collapse.mui-active {
-    margin-top: -1px
+    margin-top: -1px;
+    background-color: #eee;
+    margin-left: 0px;
 }
 
 .mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content,.mui-table-view-cell.mui-collapse.mui-active .mui-table-view {
@@ -2210,7 +2217,7 @@ p.dizhi {
     margin-top: 11px;
     margin-right: -15px;
     margin-bottom: -11px;
-    margin-left: -15px;
+    margin-left: -42px;
     border: 0
 }
 
@@ -2373,7 +2380,7 @@ input[type=color],input[type=datetime-local],input[type=datetime],input[type=ema
     height: 40px;
     padding: 10px 10px;
     -webkit-user-select: text;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,0);
     border-radius: 5px;
     outline: 0;
     background-color: #fff;
@@ -2414,7 +2421,9 @@ input[type=search]:focus {
 
 textarea {
     height: 120px;
-    resize: none
+    resize: none;
+    border: 1px solid #eee;
+    margin-top: -10px;
 }
 
 select {
@@ -4313,11 +4322,15 @@ a.mui-icon.mui-icon-phone.mui-pull-right {
 }
 
 .mui-icon-plusempty:before {
-    content: '\e468'
+    content: '\e468';
+    font-size: 20px;
 }
 
 .mui-icon-forward:before {
-    content: '\e470'
+    content: '\e470';
+    float: right;
+    padding-top:25px;
+    color: #8f8f94;
 }
 
 .mui-icon-back:before,.mui-icon-left-nav:before {
