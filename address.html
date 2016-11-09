@@ -17,8 +17,7 @@
        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
        if (restore) selObj.selectedIndex=0;
        }
-</script>
-
+    </script>
 </head>
 <body>
 
@@ -50,6 +49,7 @@
                                         <input type="people-name" name="people-name" value=""> 
                                     </p>        
                                 </div>
+                                
                                 <div class="mui-wrap-o">
                                     <p class="higher-type">详细地址：</p>
                                         <p>
@@ -78,11 +78,13 @@
             </div>
         </div>
     </div>
+    
     <button type="button" class="mui-btn-address">
-            <a href="">
-                设为默认地址/服务地址
-            </a>
-        </button>
+        <a href="">
+            设为默认地址/服务地址
+        </a>
+    </button>
+
     <script>
         mui.init({
             swipeBack: false

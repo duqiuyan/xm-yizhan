@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Hiragino Sans GB'; 
+  font-family: 'Helvetica Neue',Helvetica,sans-serif; 
   src: url('../fonts/mui.ttf');
 }
 /*顶部颜色*/
@@ -81,7 +81,7 @@ span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 .media-body p{font-size: 14px;line-height: 28px;}
 video{width: 100%;height: 100%;}
 
-/*搜索页面*/
+/*搜索框*/
 .top-sch-box {height: 34px; margin: 10px; padding: 10px;font-size: 14px;color: #999999;background-color: #fff;border-radius: 3px;}
 .centerflex {display: flex;-webkit-box-align: center;align-items: center;}
 .top-sch-box .fdj {color: #979797;font-size: 24px;float: left;margin-top: -24px;}
@@ -124,7 +124,8 @@ a.btn-me.mui-pull-right {border-radius: 5px;background-color: rgba(0,0,0,0.1);wi
 select#address {width: 21%;margin-right: 2px;height: 32px;}
 .mui-wrap-a p {color: #000;}
 input[type="address"] {width: 68%;margin-left: 85px;height: 32px;float: left;padding: 0px 5px;}
-input[type="name"] {width: 58%;float: inherit;height: 32px;}
+input[type="name"],input[type="school"] {width: 58%;float: inherit;height: 32px;}
+input[type="school"] {width: 55%;float: inherit;height: 32px;}	
 span.danwei{margin-left: 5px;}
 .kit-item-people span {margin-top: -31px;}
 .kit-item-people p{line-height: 20px;}
@@ -142,7 +143,7 @@ ul.mui-table-view.mui-message img {width: 24px;}
 .mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
 
 /*基本信息*/
-span.xingbie {margin-left: 20px;}
+span.xingbie {margin-left: 20px;color: #fff;}
 td span {line-height: 20px;}
 p.license-plate span{padding-left: 20px;line-height: 10px;}
 p.car-number {border-bottom: 1px solid #eee;padding-bottom: 10px;white-space: initial;}
@@ -156,8 +157,8 @@ ul.mui-table-view.mui-message,ul.mui-table-view.mui-table-view-chevron,ul.mui-ta
 .kit-item-visit .visit {border-bottom: 1px solid #eee;padding-bottom: 5px;}
 small.one,small.name {float: right;}
 small.distance {color: #ffa935;}
-input[type="new"] {width: 62%;float: right;height: 32px;}
-input[type="date"] {width: 100%;height: 32px;float: inherit;}
+input[type="new"] {width: 62%;float: right;height: 32px;/*border: 1px solid #8f8f94;border-radius: initial;*/}
+input[type="date"] {width: 100%;height: 32px;float: inherit;/*border: 1px solid #8f8f94;border-radius: initial;*/}
 button.miu-comment { float: right;margin-top: -50px;}
 .kit-item-comment p {font-weight: bold;}
 p.mui-subject {font-weight: bold; border-bottom: 1px solid #eee;padding-bottom: 5px;}
@@ -195,7 +196,7 @@ div#segmentedControl1 a {font-size: 16px;}
 span.area {float: right;}
 .mui-address {margin-bottom: 10px;background-color: #fff;}
 .mui-population {background-color: #fff; }
-.family-information {border-bottom: 1px solid #eee;}
+/*.family-information {border-bottom: 1px solid #eee;}*/
 .family-information p {margin-top: 12px; margin-bottom: 8px;}
 p.information small { margin-left: 18px;font-size: 16px;}
 small.relation {color: #ffa935;}
@@ -235,4 +236,4 @@ p.sy small {font-size: 14px;color: #ffa935}
 p.sy {font-size: 14px;margin-left: 85px;margin-top: -37px;}
 input[type="people-mianji"] {width: 75%;height: 32px;float: inherit;}
 input[type="people-village"] {width: 50%;float: inherit;height: 32px;}
-label {margin-right: 20px;}
+label {margin-right: 22px;}

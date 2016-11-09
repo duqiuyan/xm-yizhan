@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-    
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<!--标准mui.css-->
-		<link rel="stylesheet" href="css/mui.min.css">
-		<!--App自定义的css-->
-		<link rel="stylesheet" href="css/app.css" />
-        <link rel="stylesheet" href="css/index.main.css" />
-		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
-		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
-		<link rel="stylesheet" href="css/mui.picker.min.css" />
-	</head>
-
-	<body>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="css/mui.min.css">
+	<link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/index.main.css" />
+	<link rel="stylesheet" href="css/mui.picker.min.css" />
+</head>
+<body>
 	<header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
         <h1 class="mui-title">基本信息</h1>
@@ -31,6 +25,7 @@
                     <p>LA98522<span class="xingbie">女</span></p>
                 </div>
             </div>
+
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -53,6 +48,7 @@
             </div>
         </div>
 	</div>
+
 	<script src="js/mui.min.js"></script>
 	<script src="js/mui.picker.min.js"></script>
 	<script>
@@ -60,23 +56,6 @@
             swipeBack: false
         });
 
-        //选项卡点击事件  
-        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
-        var targetTab = this.getAttribute('href');  
-            // 判读点击第几个底部按钮
-            if (targetTab == "#tabbar-view-home") {  
-                console.log("aaa");
-                mui.openWindow({url:'index1.html'});
-            }  else if (targetTab == "#tabbar-view-find"){
-                console.log("bbb");
-                mui.openWindow({url:'index2.html'});
-            } else if(targetTab == "#tabbar-view-user"){
-                console.log("ccc");
-                mui.openWindow({url:'index3.html'});
-            }
-        }); 
-
     </script>
-	</body>
-
+</body>
 </html>

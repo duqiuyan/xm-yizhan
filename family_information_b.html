@@ -17,7 +17,7 @@
        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
        if (restore) selObj.selectedIndex=0;
        }
-</script>
+    </script>
 
 </head>
 <body>
@@ -50,24 +50,24 @@
                                         <input name="radio1" type="radio"><label>男</label>
                                         <input name="radio1" type="radio"><label>女</label>   
                                     </p>
-                                    <p class="years">上学年级：
+                                    <p class="years"><span style="color:red">&nbsp</span>上学年级：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">经济型</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>
-                                    <p class="higher-new">上学学校：
-                                        <input type="name" name="name" value="">
+                                    <p class="higher-new"><span style="color:red">&nbsp</span>上学学校：
+                                        <input type="school" name="school" value="">
                                     </p>
-                                    <p class="years">特&nbsp长&nbsp班：
+                                    <p class="years"><span style="color:red">&nbsp&nbsp</span>特&nbsp长&nbsp班：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">经济型</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>
-                                    <p class="years">兴趣爱好：
+                                    <p class="years"><span style="color:red">&nbsp</span>兴趣爱好：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">经济型</option>
@@ -82,6 +82,7 @@
             </div>
         </div>
     </div>
+    
     <script>
         mui.init({
             swipeBack: false
