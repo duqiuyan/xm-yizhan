@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
-
 </head>
 <body>
 	<header class="headerBar mui-bar mui-bar-nav">
@@ -98,37 +96,36 @@
                         </ul>
                     </div>   
                 </div>
-
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">查看更多</a>
+                    <a href="" class="more">查看更多</a>
                 </button>
             </div>
         </div>
-		</div>
-		<script src="js/mui.min.js"></script>
-		<script src="js/mui.picker.min.js"></script>
-		<script>
-            mui.init({
-            swipeBack: false
-        });
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.picker.min.js"></script>
+	<script>
+        mui.init({
+        swipeBack: false
+    });
 
-        var temp;
+    var temp;
 
-        //选项卡点击事件  
-        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
-        var targetTab = this.getAttribute('href');  
-            // 判读点击第几个底部按钮
-            if (targetTab == "#tabbar-home" && temp != targetTab) {  
-                console.log("aaa");//调试信息
-                mui.openWindow({url:'index.html'});
-            }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
-                console.log("bbb");//调试信息
-                mui.openWindow({url:'index2.html'});
-            } 
+    //选项卡点击事件  
+    mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+    var targetTab = this.getAttribute('href');  
+        // 判读点击第几个底部按钮
+        if (targetTab == "#tabbar-home" && temp != targetTab) {  
+            console.log("aaa");//调试信息
+            mui.openWindow({url:'index.html'});
+        }  else if (targetTab == "#tabbar-personal" && temp != targetTab){
+            console.log("bbb");//调试信息
+            mui.openWindow({url:'index2.html'});
+        } 
 
-            temp = targetTab;
-        });
-		
-		</script>
+        temp = targetTab;
+    });
+	
+	</script>
 </body>
 </html>

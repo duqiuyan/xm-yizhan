@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -12,10 +11,8 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
-
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -36,16 +33,15 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <a class="mui-control-item mui-active" href="#fxItemView1">待接单</a>
                 <a class="mui-control-item" href="#fxItemView2">待服务</a>
                 <a class="mui-control-item" href="#fxItemView3">进行中</a>
-                <a class="mui-control-item" href="#fxItemView4">全部订单</a>
-                
+                <a class="mui-control-item" href="#fxItemView4">全部订单</a>                
             </div>
-            
+
+            <!--待接单-->       
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -89,14 +85,14 @@
                         </ul>
                     </div>
                 </div>
-
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">
+                    <a href="" class="more">
                         查看更多
                     </a>
                 </button>
             </div>
 
+            <!--待服务--> 
             <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -140,14 +136,14 @@
                         </ul>
                     </div>
                 </div>
-
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">
+                    <a href="" class="more">
                         查看更多
                     </a>
                 </button>
             </div>
-
+            
+            <!--进行中--> 
             <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -177,7 +173,8 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!--全部订单--> 
             <div id="fxItemView4" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx4" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -268,7 +265,7 @@
                     </div>
                 </div>
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">
+                    <a href="" class="more">
                         查看更多
                     </a>
                 </button>
@@ -298,6 +295,5 @@
         }); 
 
     </script>
-
 </body>
 </html>

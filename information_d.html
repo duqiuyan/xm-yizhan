@@ -20,34 +20,54 @@
     <style type="text/css">
     /*尺寸适配1280*/
     @media screen and (max-width: 1280px){
-        .mui-scroll .mui-wrap-c .higher-new input{
-            width: 87%;
+        .mui-scroll select{
+               width: 88%;
+
+        }
+        .mui-wrap-b input{
+            width: 82%;
         }
     }
     /*苹果6p尺寸适配414x736*/
     @media screen and (max-width: 736px){
-        .mui-scroll .mui-wrap-c .higher-new input{
-            width: 82%;
+        .mui-scroll select{
+               width: 84%;
+
+        }
+        .mui-wrap-b input{
+            width: 76%;
         }
     }
     /*尺寸适配384x567*/
     @media screen and (max-width: 567px){
-        .mui-scroll .mui-wrap-c .higher-new input{
-            width: 73%;
+        .mui-scroll select{
+               width: 75%;
+
+        }
+        .mui-wrap-b input{
+            width: 65%;
         }
     }
 
     /*苹果6/6s尺寸适配 375x667*/
     @media screen and (max-width: 375px){
-        .mui-scroll .mui-wrap-c .higher-new input{
-            width: 71%;
+        .mui-scroll select{
+                width: 73%;
+
+        }
+        .mui-wrap-b input{
+            width: 62%;
         }
     }
 
    /*苹果4尺寸适配320x480  5s尺寸 320x568 */
     @media screen and (max-width: 320px){
-        .mui-scroll .mui-wrap-c .higher-new input{
-            width: 67%;
+        .mui-scroll select{
+               width: 69%;
+
+        }
+        .mui-wrap-b input{
+            width: 56%;
         }
     }
     </style>
@@ -56,7 +76,7 @@
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">地址详情</h1>
+        <h1 class="mui-title">周边环境</h1>
         <a class="btn-color mui-pull-right" href="">保存</a>
     </header>
 
@@ -68,38 +88,42 @@
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <div class="mui-wrap-c">
-                                    <p class="higher-new"><span style="color:red">*</span>客户名称：
-                                        <input type="people-name" name="people-name" value=""> 
-                                    </p>
-                                    <p class="higher-xingbie"><span style="color:red">*</span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：
-                                        <input name="radio1" type="radio"><label>男</label>
-                                        <input name="radio1" type="radio"><label>女</label>   
-                                    </p> 
-                                    <p class="higher-new">&nbsp联系电话：
-                                        <input type="people-name" name="people-name" value=""> 
-                                    </p>        
-                                </div>                               
-                                <div class="mui-wrap-o">
-                                    <p class="higher-type">&nbsp详细地址：</p>
-                                        <p>
-                                        <select name="select" id="details" class="details">
+                                <div class="mui-wrap">
+                                    <p class="higher-type"><span style="color:red">*</span>上级类型：
+                                        <select name="select" id="select_k6" class="">
+                                            <option value="选择品牌">请选择</option>
+                                            <option value="选择品牌1">选择类型1</option>
+                                            <option value="选择品牌2">选择类型2</option>
+                                        </select>
+                                    </p>          
+                                </div>
+                                <div class="mui-wrap-a">
+                                    <p class="higher-type">&nbsp周边地址：
+                                        <select name="select" id="select_k6" class="">
                                             <option value="选择品牌">小区</option>
                                             <option value="选择品牌1">宝珊花园</option>
                                             <option value="选择品牌2">千亿山庄</option>
                                         </select>
-                                        <select name="select" id="details" class="details">
+                                        <select name="select" id="select_k6" class="">
                                             <option value="选择品牌">街道</option>
                                             <option value="选择品牌1">街道1</option>
                                             <option value="选择品牌2">街道2</option>
                                         </select>
-                                        <select name="select" id="details" class="details">
+                                        <select name="select" id="select_k6" class="">
                                             <option value="选择品牌">驿站</option>
                                             <option value="选择品牌1">驿站1</option>
                                             <option value="选择品牌2">驿站2</option>
                                         </select>
                                     </p>
-                                    <input type="details" name="name" value="">          
+                                    <input type="text" name="" id="" value="" class="people-dz"> 
+                                </div>
+                                <div class="mui-wrap-b">
+                                    <p class="higher-type">&nbsp类型名称：
+                                        <input type="text" name="" id="" value="" class="people-much"> 
+                                    </p>
+                                    <p class="higher-type">&nbsp距离小区：
+                                        <input type="text" name="" id="" value="" class="people-much"><span class="danwei">(米)</span> 
+                                    </p>         
                                 </div>
                             </li>
                         </ul>
@@ -107,12 +131,7 @@
                 </div>
             </div>
         </div>
-    </div>    
-    <button type="button" class="mui-btn-address">
-        <a href="" class="more">
-            设为默认地址/服务地址
-        </a>
-    </button>
+    </div>   
     <script>
         mui.init({
             swipeBack: false

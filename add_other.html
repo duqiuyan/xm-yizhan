@@ -17,9 +17,62 @@
        if (restore) selObj.selectedIndex=0;
        }
     </script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-scroll select{
+               width: 88%;
+
+        }
+        .mui-scroll #select_k3{
+               width: 83%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-scroll select{
+               width: 84%;
+
+        }
+        .mui-scroll #select_k3{
+               width: 78%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-scroll select{
+               width: 75%;
+
+        }
+        .mui-scroll #select_k3{
+               width: 64%;
+        }
+    }
+
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-scroll select{
+                width: 73%;
+
+        }
+        .mui-scroll #select_k3{
+               width: 61%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-scroll select{
+               width: 69%;
+
+        }
+        .mui-scroll #select_k3{
+               width: 56%;
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -29,7 +82,6 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <a class="mui-control-item mui-active" href="#fxItemView1">周边环境</a>
@@ -45,16 +97,15 @@
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap">
                                     <p class="higher-type"><span style="color:red">*</span>上级类型：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k6" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>          
                                 </div>
-
                                 <div class="mui-wrap-a">
-                                    <p class="higher-type">周边地址：
+                                    <p class="higher-type">&nbsp周边地址：
                                         <select name="select" id="address" class="address">
                                             <option value="选择品牌">小区</option>
                                             <option value="选择品牌1">宝珊花园</option>
@@ -71,37 +122,32 @@
                                             <option value="选择品牌2">驿站2</option>
                                         </select>
                                     </p>
-                                    <input type="address" name="name" value="">          
+                                    <input type="text" name="" id="" value="" class="people-dz"> 
                                 </div>
-
                                 <div class="mui-wrap-b">
                                     <p class="higher-type">类型名称：
-                                        <input type="name" name="name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-much"> 
                                     </p>
                                     <p class="higher-type">距离小区：
-                                        <input type="name" name="name" value=""><span class="danwei">(米)</span> 
+                                        <input type="text" name="" id="" value="" class="people-much"><span class="danwei">(米)</span> 
                                     </p>         
                                 </div>
                             </li>
                         </ul>
                     </div>
-
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <a href="">
                                 <!--文字信息-->
-                                    <div class="kit-item-name">
-                                        <p class='name'>名称：</p>
-                                        <p class='mui-name'>距离小区（米）：</p>
-                                    </div>
-
-                                    <div class="tit-button">
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
-                                    </div>
-                                </a>
+                                <div class="kit-item-name">
+                                    <p class='name'>名称：</p>
+                                    <p class='mui-name'>距离小区（米）：</p>
+                                </div>
+                                <div class="tit-button">
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -116,14 +162,13 @@
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap">
                                     <p class="higher-type"><span style="color:red">*</span>配套设施名称：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k3" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>          
                                 </div>
-
                                 <div class="mui-wrap-b">
                                     <p class="higher-type">设施地址：
                                         <select name="select" id="address" class="address">
@@ -142,27 +187,34 @@
                                             <option value="选择品牌2">驿站2</option>
                                         </select>
                                     </p>
-                                    <input type="address" name="name" value="">          
-                                </div>
+                                    <input type="text" name="" id="" value="" class="people-dz">
+                                    </div>
                             </li>
                         </ul>
                     </div>
-
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <a href="">
                                 <!--文字信息-->
-                                    <div class="kit-item-name">
-                                        <p class='name'>名称：楼盘级别</p>
-                                    </div>
-
-                                    <div class="tit-button">
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
-                                    </div>
-                                </a>
+                                <div class="kit-item-name">
+                                    <p class='name'>名称：楼盘级别</p>
+                                </div>
+                                <div class="tit-button">
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
+                                </div>
+                            </li>
+                            <li class="kitchen-item mui-table-view-cell mui-media">
+                                <!--文字信息-->
+                                <div class="kit-item-name">
+                                    <p class='name'>名称：公共体育设施</p>
+                                </div>
+                                <div class="tit-button">
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -177,7 +229,7 @@
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap">
                                     <p class="higher-type"><span style="color:red">*</span>快递公司：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k6" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">顺丰快递</option>
                                             <option value="选择品牌2">韵达快递</option>
@@ -187,7 +239,6 @@
                                         </select>
                                     </p>          
                                 </div>
-
                                 <div class="mui-wrap-a">
                                     <p class="higher-type">网点地址：
                                         <select name="select" id="address" class="address">
@@ -206,15 +257,13 @@
                                             <option value="选择品牌2">驿站2</option>
                                         </select>
                                     </p>
-                                    <input type="address" name="name" value="">          
-                                </div>
-
+                                    <input type="text" name="" id="" value="" class="people-dz">  </div>
                                 <div class="mui-wrap-b">
                                     <p class="higher-type">配送量：
-                                        <input type="name" name="name" value=""><span class="danwei">(件)</span> 
+                                        <input type="text" name="" id="" value="" class="people-much"><span class="danwei">(件)</span> 
                                     </p>
                                     <p class="higher-type">代收量：
-                                        <input type="name" name="name" value=""><span class="danwei">(件)</span> 
+                                        <input type="text" name="" id="" value="" class="people-much"><span class="danwei">(件)</span> 
                                     </p>         
                                 </div>
                             </li>
@@ -223,21 +272,18 @@
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <a href="">
                                 <!--文字信息-->
-                                    <div class="kit-item-name">
-                                        <p class='name'>快递公司：韵达快递</p>
-                                        <p class='mui-name-a'>配送量:100(件)
-                                        <small>配送量:100(件)</small>
-                                        </p>
-                                    </div>
-                                    
-                                    <div class="tit-button">
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
-                                        <a href="add_other.html"><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
-                                        <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
-                                    </div>
-                                </a>
+                                <div class="kit-item-name">
+                                    <p class='name'>快递公司：韵达快递</p>
+                                    <p class='mui-name-a'>配送量:100(件)
+                                    <small>配送量:100(件)</small>
+                                    </p>
+                                </div>                                   
+                                <div class="tit-button">
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp查看&nbsp&nbsp&nbsp"></a>
+                                    <a href="add_other.html"><input type="button" name="Submit" value="&nbsp&nbsp&nbsp编辑&nbsp&nbsp&nbsp"></a>
+                                    <a href=""><input type="button" name="Submit" value="&nbsp&nbsp&nbsp删除&nbsp&nbsp&nbsp"></a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -245,13 +291,11 @@
             </div>
         </div>
     </div>
-
     <script>
         mui.init({
             swipeBack: false
         });
 
     </script>
-
 </body>
 </html>

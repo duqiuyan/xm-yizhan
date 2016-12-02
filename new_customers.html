@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -18,10 +17,57 @@
        if (restore) selObj.selectedIndex=0;
        }
     </script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-scroll .higher-new input{
+            width: 87%;
+        }
+        .mui-scroll .mui-wrap select{
+            width: 87%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-scroll .higher-new input{
+            width: 83%;
+        }
+        .mui-scroll .mui-wrap select{
+            width: 83%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-scroll .higher-new input{
+            width: 73%;
+        }
+        .mui-scroll .mui-wrap select{
+            width: 73%;
+        }
+    }
 
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-scroll .higher-new input{
+            width: 71%;
+        }
+        .mui-scroll .mui-wrap select{
+            width: 71%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-scroll .higher-new input{
+            width: 67%;
+        }
+        .mui-scroll .mui-wrap select{
+            width: 67%;
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -31,32 +77,29 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
-                                <a href="">
-                                    <div class="user-topv">
+                                <div class="user-topv">
+                                    <a href="">
                                         <div class="user-img"><img src="images/main.png" alt=""></div>
                                         <p class="photo">点击头像修改</p>
-                                    </div>
-                                </a>
-
+                                    </a>
+                                </div>
                                 <div class="mui-wrap-c">
                                     <p class="higher-new"><span style="color:red">*</span>客户名称：
-                                        <input type="people-name" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>
-                                    <p class="higher-new"><span style="color:red">*</span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：
+                                    <p class="higher-xingbie"><span style="color:red">*</span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：
                                         <input name="radio1" type="radio"><label>男</label>
                                         <input name="radio1" type="radio"><label>女</label>   
                                     </p>         
                                 </div>
-
                                 <div class="mui-wrap">
-                                    <p class="people-name">&nbsp客户来源：
+                                    <p class="people-name"><span style="color:red">*</span>客户来源：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
@@ -64,22 +107,21 @@
                                         </select>
                                     </p>
                                     <p class="higher-new"><span style="color:red">*</span>联系电话：
-                                        <input type="people-name" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>
                                     <p class="higher-new"><span style="color:red">*</span>家庭住址：
-                                        <input type="people-name" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>          
                                 </div>
-
                                 <div class="mui-people-name">
-                                    <p class="higher-new">&nbsp微&nbsp信&nbsp号：
-                                        <input type="people-name" name="people-name" value=""> 
+                                    <p class="higher-new">&nbsp微&nbsp&nbsp信&nbsp&nbsp号：
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>
-                                    <p class="higher-new">&nbsp生&nbsp&nbsp&nbsp&nbsp&nbsp日：
-                                        <input type="people-name" name="people-name" value="">
+                                    <p class="higher-new">&nbsp生&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日：
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>
-                                    <p class="higher-new">&nbsp职&nbsp&nbsp&nbsp&nbsp&nbsp业：
-                                        <input type="people-name" name="people-name" value="">
+                                    <p class="higher-new">&nbsp职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业：
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>          
                                 </div>
                             </li>
@@ -88,8 +130,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>   
     <script>
         mui.init({
             swipeBack: false

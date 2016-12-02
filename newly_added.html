@@ -11,9 +11,57 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-scroll .higher-new input{
+            width: 87%;
+        }
+        .mui-scroll .kit-item-people input{
+            width: 84%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-scroll .higher-new input{
+            width: 81%;
+        }
+        .mui-scroll .kit-item-people input{
+            width: 79%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-scroll .higher-new input{
+            width: 70%;
+        }
+        .mui-scroll .kit-item-people input{
+            width: 67%;
+        }
+    }
+
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-scroll .higher-new input{
+            width: 68%;
+        }
+        .mui-scroll .kit-item-people input{
+            width: 65%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-scroll .higher-new input{
+            width: 63%;
+        }
+        .mui-scroll .kit-item-people input{
+            width: 60%;
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -31,16 +79,16 @@
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <!--文字信息-->
                                 <div class="kit-item-new">
-                                    <p class="higher-new"><span style="color:red">*</span>车&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp主：
+                                    <p class="higher-new"><span style="color:red">*</span>车&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp主：
                                         <input type="new" name="new" value=""> 
                                     </p>
-                                    <p class="higher-new"><span style="color:red">*</span>车&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌：
+                                    <p class="higher-new"><span style="color:red">*</span>车&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌：
                                         <input type="new" name="new" value=""> 
                                     </p>
                                     <p class="higher-new"><span style="color:red">*</span>车&nbsp辆&nbsp类&nbsp型：
                                         <input type="new" name="new" value=""> 
                                     </p>
-                                    <p class="higher-new"><span style="color:red">*</span>车&nbsp&nbsp&nbsp架&nbsp&nbsp&nbsp号：
+                                    <p class="higher-new"><span style="color:red">*</span>&nbsp车&nbsp&nbsp&nbsp架&nbsp&nbsp&nbsp号：
                                         <input type="new" name="new" value=""> 
                                     </p>
                                     <p class="higher-new"><span style="color:red">&nbsp</span>品&nbsp牌&nbsp型&nbsp号：
@@ -54,18 +102,16 @@
                                     </p>
                                 </div>
                             </li>
-
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <!--文字信息-->
                                 <div class="kit-item-people">
-                                    <p class="license-plate">初&nbsp&nbsp登&nbsp&nbsp日&nbsp&nbsp期：<input type="date" name="date" value=""> </p>
+                                    <p class="license-plate">&nbsp&nbsp初&nbsp&nbsp登&nbsp&nbsp日&nbsp&nbsp期：<input type="date" name="date" value=""> </p>
                                     <p>下次保养日期：<input type="date" name="date" value=""> </p>
-                                    <p >年&nbsp&nbsp检&nbsp&nbsp日&nbsp&nbsp期：<input type="date" name="date" value=""> </p>
+                                    <p >&nbsp&nbsp年&nbsp&nbsp检&nbsp&nbsp日&nbsp&nbsp期：<input type="date" name="date" value=""> </p>
                                     <p>交强险到期日：<input type="date" name="date" value=""> </p>
                                     <p>商业险到期日：<input type="date" name="date" value=""> </p>
                                 </div>
-                            </li>
-                            
+                            </li>                           
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <!--文字信息-->
                                 <table width="100%" border="1" cellspacing="0" cellpadding="2" bordercolor="#eee">
@@ -82,7 +128,6 @@
             </div>
         </div>
     </div>
-
     <script>
         mui.init({
             swipeBack: false

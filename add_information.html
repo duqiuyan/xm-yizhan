@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -17,11 +16,110 @@
        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
        if (restore) selObj.selectedIndex=0;
        }
-</script>
+    </script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-scroll select{
+               width: 88%;
 
+        }
+        .higher-ss input{
+            width: 87%;
+        }
+        .higher-new input{
+            width: 86%;
+        }
+        .higher-danwei input{
+            width: 77%;
+        }
+        .higher-sss input{
+            width: 78%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-scroll select{
+               width: 84%;
+
+        }
+        .higher-ss input{
+            width: 83%;
+        }
+        .higher-new input{
+            width: 82%;
+        }
+        .higher-danwei input{
+            width: 70%;
+        }
+        .higher-sss input{
+            width: 72%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-scroll select{
+               width: 75%;
+
+        }
+        .higher-ss input{
+            width: 73%;
+        }
+        .higher-new input{
+            width: 70%;
+        }
+        .higher-danwei input{
+            width: 52%;
+        }
+        .higher-sss input{
+            width: 54%;
+        }
+    }
+
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-scroll select{
+                width: 72%;
+
+        }
+        .higher-ss input{
+            width: 72%;
+            float: right;
+        }
+        .higher-new input{
+            width: 68%;
+        }
+        .higher-danwei input{
+            width: 48%;
+        }
+        .higher-sss input{
+            width: 51%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-scroll select{
+               width: 68%;
+
+        }
+        .higher-ss input{
+            width: 68%;
+            float: right;
+        }
+        .higher-new input{
+            width: 62%;
+        }
+        .higher-danwei input{
+            width: 40%;
+        }
+        .higher-sss input{
+            width: 42%;
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -31,7 +129,6 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
@@ -40,23 +137,23 @@
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap-c">
                                     <p class="people-name"><span style="color:red">*</span>小区名称：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k9" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>
                                     <p class="people-name"><span style="color:red">*</span>驿站名称：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k9" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>
-                                    <p class="higher-new"><span style="color:red">*</span>楼盘名称：
-                                        <input type="people-name" name="people-name" value=""> 
+                                    <p class="higher-ss"><span style="color:red">*</span>楼盘名称：
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>
-                                    <p class="higher-new"><span style="color:red">*</span>楼盘级别：
+                                    <p class="higher-jibie"><span style="color:red">*</span>楼盘级别：
                                         <input name="radio1" type="radio"><label>别墅</label>
                                         <input name="radio1" type="radio"><label>高层电梯</label>
                                         <input name="radio1" type="radio"><label>普通电梯</label>
@@ -64,69 +161,62 @@
                                         <input name="radio1" type="radio"><label>自建房</label>
                                     </p> 
                                 </div>
-
                                 <div class="mui-wrap-c">
                                     <p class="people-name"><span style="color:red">*</span>合作状态：
-                                        <select name="select" id="select_k1" class="">
+                                        <select name="select" id="select_k9" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select> 
                                     </p>
-                                    <p class="people-name"><span style="color:red">*</span>周边消费水平：
-                                        <select name="select" id="select_k1" class="">
+                                    <p class="people-name"><span style="color:red">*</span>消费水平：
+                                        <select name="select" id="select_k9" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select> 
                                     </p>         
                                 </div>
-
                                 <div class="mui-wrap">
                                     <p class="higher-new">业务联系人：
-                                        <input type="people-name" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>
                                     <p class="higher-new">联系人电话：
-                                        <input type="people-name" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>
-                                    <p class="higher-new">办公面积：
-                                        <input type="people-mianji" name="people-name" value="">（平方）
+                                    <p class="higher-danwei">办&nbsp公&nbsp&nbsp面&nbsp积：
+                                        <input type="text" name="" id="" value="" class="people-mj">（平方）
                                     </p> 
-                                    <p class="higher-new">办公位置：
-                                        <input type="people-name" name="people-name" value=""> 
+                                    <p class="higher-new">办&nbsp公&nbsp&nbsp位&nbsp置：
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>         
                                 </div>
-
                                 <div class="mui-wrap">
                                     <p class="higher-new">小区总户数：
-                                        <input type="people-village" name="people-name" value=""> 
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p> 
-                                    <p class="higher-new">已&nbsp入&nbsp户&nbsp数：
-                                        <input type="people-village" name="people-name" value=""> 
+                                    <p class="higher-new">&nbsp已&nbsp入&nbsp户&nbsp数：
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>
-                                    <p class="higher-new">入&nbsp&nbsp&nbsp住&nbsp&nbsp&nbsp率：
-                                        <input type="people-village" name="people-name" value="">&nbsp&nbsp% 
+                                    <p class="higher-danwei">&nbsp入&nbsp&nbsp&nbsp住&nbsp&nbsp&nbsp率&nbsp：
+                                        <input type="text" name="" id="" value="" class="people-rzl">&nbsp&nbsp% 
                                     </p> 
-                                    <p class="higher-new">物&nbsp业&nbsp人&nbsp数：
-                                        <input type="people-village" name="people-name" value=""> 
+                                    <p class="higher-new">&nbsp物&nbsp业&nbsp人&nbsp数：
+                                        <input type="text" name="" id="" value="" class="people-name"> 
                                     </p>       
                                 </div>
-
                                 <div class="mui-people-name">
-                                    <p class="higher-new">业务喜好和需求：
-                                        <input type="people-name" name="people-name" value=""> 
+                                    <p class="higher-sss">业&nbsp务&nbsp喜&nbsp好&nbsp和&nbsp需&nbsp求：
+                                        <input type="text" name="" id="" value="" class="people-love"> 
                                     </p>
-
-                                    <p class="higher-new">建议/适合推广产品：
-                                        <input type="people-name" name="people-name" value="">
+                                    <p class="higher-sss">&nbsp建议/适合推广产品：
+                                        <input type="text" name="" id="" value="" class="people-love">
                                     </p>
-
-                                    <p class="higher-new">其他需求：
-                                        <input type="people-name" name="people-name" value="">
+                                    <p class="higher-new">&nbsp其&nbsp他&nbsp需&nbsp求：
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>
-
-                                    <p class="higher-new">备注：
-                                        <input type="people-name" name="people-name" value="">
+                                    <p class="higher-new">&nbsp备&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注：
+                                        <input type="text" name="" id="" value="" class="people-name">
                                     </p>          
                                 </div>
                             </li>

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -18,10 +17,65 @@
        if (restore) selObj.selectedIndex=0;
        }
     </script>
+    <style type="text/css">
+    .demo{
+        display: -webkit-flex;
+        text-align: center;
+        flex-direction: row;
+    }
 
+    .item{
+        text-align: left;
+        padding: 2px;
+        line-height: 32px;
+        width: 116px;
+    }
+    .sel_dd{
+        line-height: 32px;
+    }
+
+
+
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .demo .item select{
+               width: 542%;
+
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .demo .item select{
+               width: 390%;
+
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .demo .item select{
+               width: 202%;
+
+        }
+    }
+
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .demo .item select{
+                width: 180%;
+
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .demo .item select{
+               width: 143%;
+
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -31,7 +85,6 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
@@ -39,83 +92,107 @@
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap-o">
-                                    <p class="building">房&nbsp&nbsp屋&nbsp&nbsp结&nbsp&nbsp构：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">购&nbsp&nbsp房&nbsp&nbsp年&nbsp&nbsp限：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">房&nbsp&nbsp屋&nbsp&nbsp面&nbsp&nbsp积：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">墙壁装修材料：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">墙壁装修材料：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">房&nbsp&nbsp间&nbsp&nbsp数&nbsp&nbsp量：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">客&nbsp&nbsp厅&nbsp&nbsp数&nbsp&nbsp量：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">厨&nbsp&nbsp房&nbsp&nbsp数&nbsp&nbsp量：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">阳&nbsp&nbsp台&nbsp&nbsp数&nbsp&nbsp量：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">卫&nbsp生&nbsp间&nbsp数&nbsp量：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
-                                    <p class="years">进门需要换鞋：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
-                                    </p>
+                                    <div class="demo">
+                                        <div class="item" >房&nbsp&nbsp屋&nbsp&nbsp&nbsp&nbsp结&nbsp&nbsp构：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >购&nbsp&nbsp房&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >房&nbsp&nbsp屋&nbsp&nbsp&nbsp&nbsp面&nbsp&nbsp积：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >墙壁装修材料：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >房&nbsp&nbsp间&nbsp&nbsp&nbsp&nbsp数&nbsp&nbsp量：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >客&nbsp&nbsp厅&nbsp&nbsp&nbsp&nbsp数&nbsp&nbsp量：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >厨&nbsp&nbsp房&nbsp&nbsp&nbsp&nbsp数&nbsp&nbsp量：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item" >阳&nbsp&nbsp台&nbsp&nbsp&nbsp&nbsp数&nbsp&nbsp量：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item">卫&nbsp生&nbsp间&nbsp数&nbsp量：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="demo">
+                                        <div class="item">进门需要换鞋：</div>
+                                        <div class="item">
+                                            <select name="select" id="" class="sel_dd">
+                                                <option value="选择品牌">请选择</option>
+                                                <option value="选择品牌1">选择类型1</option>
+                                                <option value="选择品牌2">选择类型2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </li>
 
@@ -132,11 +209,11 @@
                                                 <a class="mui-icon mui-icon-forward" href="sofa.html">
                                                     <p class="building">沙发价格间区：5000-10000
                                                     </p>
-                                                    <p class="years">沙发面料：皮沙发
+                                                    <p class="years">沙&nbsp&nbsp发&nbsp&nbsp&nbsp&nbsp面&nbsp&nbsp料：皮沙发
                                                     </p>
-                                                    <p class="years">保养的频率：一年一次
+                                                    <p class="years">保&nbsp养&nbsp的&nbsp频&nbsp率：一年一次
                                                     </p>
-                                                    <p class="years">保养人员：商家配送保养
+                                                    <p class="years">保&nbsp&nbsp养&nbsp&nbsp&nbsp&nbsp人&nbsp&nbsp员：商家配送保养
                                                     </p>
                                                 </a>
                                             </div>
@@ -158,15 +235,15 @@
                                                 <h4>电视机</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="television.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="television.html">
-                                                    <p class="building">电视机款式：嵌壁式
+                                                    <p class="building">电&nbsp视&nbsp机&nbsp款&nbsp式：嵌壁式
                                                     </p>
-                                                    <p class="years">电视机品牌：索尼
+                                                    <p class="years">电&nbsp视&nbsp机&nbsp品&nbsp牌：索尼
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
                                                     <p class="years">是否在保修期：是
                                                     </p>
-                                                    <p class="years">电视机通常找哪里维修：商家
+                                                    <p class="years">找&nbsp哪&nbsp里&nbsp维&nbsp修：商家
                                                     </p>
                                                 </a>
                                             </div>
@@ -174,15 +251,15 @@
                                                 <h4>空调</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="air_conditioning.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="air_conditioning.html">
-                                                    <p class="building">空调款式：挂式
+                                                    <p class="building">空&nbsp&nbsp调&nbsp&nbsp&nbsp&nbsp款&nbsp&nbsp式：挂式
                                                     </p>
-                                                    <p class="years">空调品牌：海尔
+                                                    <p class="years">空&nbsp&nbsp调&nbsp&nbsp&nbsp&nbsp品&nbsp&nbsp牌：海尔
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">空调保修期：保修期内
+                                                    <p class="years">空&nbsp调&nbsp保&nbsp修&nbsp期：保修期内
                                                     </p>
-                                                    <p class="years">空调维修商：联系商家
+                                                    <p class="years">空&nbsp调&nbsp维&nbsp修&nbsp商：联系商家
                                                     </p>
                                                 </a>
                                             </div>
@@ -190,9 +267,9 @@
                                                 <h4>净化器</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="purifier.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="purifier.html">
-                                                    <p class="years">净化器品牌：索尼
+                                                    <p class="years">净&nbsp化&nbsp器&nbsp品v牌：索尼
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
                                                     <p class="years">是否在保修期：是
                                                     </p>
@@ -204,9 +281,9 @@
                                                 <h4>饮水机</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="water_dispenser.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="water_dispenser.html">
-                                                    <p class="years">饮水机品牌：索尼
+                                                    <p class="years">饮&nbsp水&nbsp机&nbsp品&nbsp牌：索尼
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
                                                     <p class="years">是否在保修期：是
                                                     </p>
@@ -218,7 +295,7 @@
                                                 <h4>其它</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="other_room.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="other_room.html">
-                                                    <p class="building">餐桌材料：大理石
+                                                    <p class="building">餐&nbsp&nbsp桌&nbsp&nbsp&nbsp&nbsp材&nbsp&nbsp料：大理石
                                                     </p>
                                                     <p class="years">客厅窗帘材料：全棉平绒
                                                     </p>
@@ -241,17 +318,17 @@
                                                 <h4>油烟机</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="cooker_hood.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="cooker_hood.html">
-                                                    <p class="building">油烟机分类：中式油烟机
+                                                    <p class="building">油&nbsp烟&nbsp机&nbsp分&nbsp类：中式油烟机
                                                     </p>
-                                                    <p class="years">油烟机品牌：海尔
+                                                    <p class="years">油&nbsp烟&nbsp机&nbsp品&nbsp牌：海尔
                                                     </p>
-                                                    <p class="years">购买年限：1-5年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-5年
                                                     </p>
                                                     <p class="years">是否在保修期内：是
                                                     </p>
-                                                    <p class="years">维修是找哪里维修：外面的维修点
+                                                    <p class="years">是找哪里维修：外面的维修点
                                                     </p>
-                                                    <p class="building">清洗频率：两个月一次
+                                                    <p class="building">清&nbsp&nbsp洗&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：两个月一次
                                                     </p>
                                                     <p class="years">清洗是找哪里：外面的服务公司
                                                     </p>
@@ -261,13 +338,13 @@
                                                 <h4>燃气灶</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="hotplate.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="hotplate.html">
-                                                    <p class="building">燃气灶品牌：西门子
+                                                    <p class="building">燃&nbsp气&nbsp灶&nbsp品&nbsp牌：西门子
                                                     </p>
-                                                    <p class="years">购买年限：1-5年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-5年
                                                     </p>
-                                                    <p class="years">清洗频率：一年一次
+                                                    <p class="years">清&nbsp&nbsp洗&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：一年一次
                                                     </p>
-                                                    <p class="years">清洗人员：自己清洗
+                                                    <p class="years">清&nbsp&nbsp洗&nbsp&nbsp&nbsp&nbsp人&nbsp&nbsp员：自己清洗
                                                     </p>
                                                 </a>
                                             </div>
@@ -277,9 +354,9 @@
                                                 <a class="mui-icon mui-icon-forward" href="appliances.html">
                                                     <p class="building">煮饭电器品牌：电饭煲
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">使用频率：每天
+                                                    <p class="years">使&nbsp&nbsp用&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：每天
                                                     </p>
                                                 </a>
                                             </div>
@@ -287,11 +364,11 @@
                                                 <h4>电饭煲</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="rice_cooker.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="rice_cooker.html">
-                                                    <p class="building">电饭煲品牌：苏泊尔
+                                                    <p class="building">电&nbsp饭&nbsp煲&nbsp品&nbsp牌：苏泊尔
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">使用频率：每天
+                                                    <p class="years">使&nbsp&nbsp用&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：每天
                                                     </p>
                                                 </a>
                                             </div>
@@ -301,9 +378,9 @@
                                                 <a class="mui-icon mui-icon-forward" href="electric_pressure_cooker.html">
                                                     <p class="building">电压力锅品牌：苏泊尔
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">使用频率：每天
+                                                    <p class="years">使&nbsp&nbsp用&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：每天
                                                     </p>
                                                 </a>
                                             </div>
@@ -311,11 +388,11 @@
                                                 <h4>微波炉</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="microwave_oven.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="microwave_oven.html">
-                                                    <p class="building">微波炉品牌：电饭煲
+                                                    <p class="building">微&nbsp波&nbsp炉&nbsp品&nbsp牌：电饭煲
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">使用频率：每天
+                                                    <p class="years">使&nbsp&nbsp用&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：每天
                                                     </p>
                                                 </a>
                                             </div>
@@ -323,11 +400,11 @@
                                                 <h4>电冰箱</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="freezer.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="freezer.html">
-                                                    <p class="building">电冰箱品牌：海尔
+                                                    <p class="building">电&nbsp冰&nbsp箱&nbsp品&nbsp牌：海尔
                                                     </p>
-                                                    <p class="years">购买年限：1-3年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-3年
                                                     </p>
-                                                    <p class="years">使用频率：每天
+                                                    <p class="years">使&nbsp&nbsp用&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：每天
                                                     </p>
                                                     <p class="years">是否在保修期内：是
                                                     </p>
@@ -382,13 +459,13 @@
                                                 <h4>热水器</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="heater.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="heater.html">
-                                                    <p class="building">热水器款式：太阳能
+                                                    <p class="building">热&nbsp水&nbsp器&nbsp款&nbsp式：太阳能
                                                     </p>
-                                                    <p class="years">热水器品牌：史密斯
+                                                    <p class="years">热&nbsp水&nbsp器&nbsp品&nbsp牌：史密斯
                                                     </p>
-                                                    <p class="years">购买年限：1-5年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-5年
                                                     </p>
-                                                    <p class="years">清洗频率：六个月一次
+                                                    <p class="years">清&nbsp&nbsp洗&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：六个月一次
                                                     </p>
                                                     <p class="years">是否在保修期内：是
                                                     </p>
@@ -400,7 +477,7 @@
                                                 <h4>洗衣机</h4>
                                                 <a class="btn-color-w mui-icon mui-icon-plusempty mui-pull-right" href="washer.html"></a>
                                                 <a class="mui-icon mui-icon-forward" href="washer.html">
-                                                    <p class="building">洗衣机品牌：海尔
+                                                    <p class="building">品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌：海尔
                                                     </p>
                                                     <p class="years">购买年限：1-3年
                                                     </p>
@@ -439,7 +516,7 @@
                                                 <a class="mui-icon mui-icon-forward" href="blind.html">
                                                     <p class="building">卧室窗帘材料：亚麻
                                                     </p>
-                                                    <p class="years">购买年限：1-5年
+                                                    <p class="years">购&nbsp&nbsp买&nbsp&nbsp&nbsp&nbsp年&nbsp&nbsp限：1-5年
                                                     </p>
                                                 </a>
                                             </div>
@@ -488,7 +565,7 @@
                                                 <a class="mui-icon mui-icon-forward" href="pet.html">
                                                     <p class="building">宠物粮食品牌：皇家
                                                     </p>
-                                                    <p class="years">洗澡频率：一天一次
+                                                    <p class="years">洗&nbsp&nbsp澡&nbsp&nbsp&nbsp&nbsp频&nbsp&nbsp率：一天一次
                                                     </p>
                                                     <p class="years">打疫苗针期限：3个月一次
                                                     </p>
@@ -515,7 +592,7 @@
                                                 <a class="mui-icon mui-icon-forward" href="floor.html">
                                                     <p class="building">地板材料：木地板
                                                     </p>
-                                                    <p class="years">范围：卧室、客厅
+                                                    <p class="years">范&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp围：卧室、客厅
                                                     </p>
                                                     <p class="years">地毯面积：客厅
                                                     </p>
@@ -568,8 +645,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <script>
         mui.init({
             swipeBack: false

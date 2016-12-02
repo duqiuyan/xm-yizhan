@@ -15,6 +15,7 @@
 /*间隔模块*/
 .cell-interval{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
 .cell-in{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
+
 /*绘制线条*/
 .lc-line-t{border-top: #e0e5e6 solid 1px;}
 .lc-line-b{border-bottom: #e0e5e6 solid 1px;}
@@ -42,14 +43,15 @@
 .mui-slider1 .mui-slider-group .mui-slider-item img {width: 100%;}
 .kit-item-txt.mui-media-body img {width: 16px;}
 span.mui-icon p {margin-left: 16px;}
-.title,.title-a,.title-b,.title-c,.title-na{border-bottom: 1px solid #eee;padding-bottom:10px;}
+.title,.title-b,.title-c,.title-cc{border-bottom: 1px solid #eee;}
+.title-a,.title-na {border-bottom: 1px solid #eee;/*padding-bottom:10px;*/}
 .title-d {border-bottom: 1px solid #eee;} 
 .title-e {color: #333;margin-left: 10px;margin-right: 10px;}
 .title,.title-a,span {font-size: 16px;line-height: 36px; padding-bottom: 0px;}
 .title-b span {font-size: 16px;line-height: 36px;}
 .title-b ,.title-c{padding-bottom: 0px;}
 .title-b span p{font-size: 14px;line-height: 20px;color: #333;}
-.title-c span p,.title-d span p,.title-o span p {font-size: 14px;line-height: 18px;color: #8f8f94;white-space: normal;}
+.title-c span p,.title-d span p,.title-o span p,.title-k span p {font-size: 14px;line-height: 18px;color: #8f8f94;white-space: normal;}
 .title-b small {font-size: 16px;font-weight: bold;}
 span.jieshao {margin-top: -75px;float: left;margin-left: 68px;}
 span.cut {float: left;}
@@ -106,33 +108,37 @@ span.mui-name small {margin-left: 20px;}
 .title-number {font-weight: bold; margin-top: -5px;border-bottom: 1px solid #eee;}
 .kit-item-name p {color: #000;}
 .title-na p {color: #000;}
-.title-na img {width: 16px;}
+.title-na img ,.title-cc img{width: 16px;}
 p.mui-name small {padding-left: 30px;}
 p.mui-name-a small {padding-left: 30px;}
 .kit-item-name {border-bottom: 1px solid #eee;padding-bottom: 5px;}
 input[type=sub] {color: #fff;border: 1px solid #ffa935;background-color: #ffa935;}
 input[type=sub] {margin-top: 10px;font-size: 14px;line-height: 28px;margin-bottom: 0;text-align: center;color: #ffa935;border: 1px solid #ffa935;border-radius: 3px;background-color: #fff;margin-right: 15px;width: 80px;float: inherit;}
-a.btn-color.mui-pull-right{margin-top: 13px; font-size: 14px;}
+a.btn-color.mui-pull-right{margin-top: 13px; font-size: 14px;color: #fff;}
 a.btn-me.mui-pull-right {margin-top: 10px;font-size: 14px;line-height: 26px;}
-a.btn-me.mui-pull-right {border-radius: 5px;background-color: rgba(0,0,0,0.1);width: 62px;height: 24px;text-align: center;}
+a.btn-me.mui-pull-right {border-radius: 5px;background-color: rgba(0,0,0,0.1);width: 62px;height: 24px;text-align: center;color: #fff;}
 
 /*添加其它*/
 .mui-wrap p,.mui-wrap-b p {color: #000;}
 .mui-wrap {border-bottom: 1px solid #eee;}
 .mui-wrap-a {border-bottom: 1px solid #eee;padding-bottom: 10px;}
 .mui-wrap-c {border-bottom: 1px solid #eee;margin-top: 0px;}
-select#address {width: 21%;margin-right: 2px;height: 32px;}
+select#address {/*width: 68%;*/
+    height: 32px;
+    float: right;
+    margin-bottom: inherit;
+    /*margin-right: 8px;*/}
 .mui-wrap-a p {color: #000;}
-input[type="address"] {width: 68%;margin-left: 85px;height: 32px;float: left;padding: 0px 5px;}
+input[type="address"] {width: 67%;margin-left: 85px;height: 32px;float: left;padding: 0px 5px;}
 input[type="name"],input[type="school"] {width: 58%;float: inherit;height: 32px;}
 input[type="school"] {width: 55%;float: inherit;height: 32px;}	
 span.danwei{margin-left: 5px;}
 .kit-item-people span {margin-top: -31px;}
-.kit-item-people p{line-height: 20px;}
+.kit-item-people p{line-height: 20px; white-space: initial;}
 
 /*添加其它*/
-input[type="people-name"],input[type="relation"],input[type="birth"]{width: 100%;float: inherit;height: 32px;}
-p.people-name select {width: 100%;}
+input[type="people-name"],input[type="relation"],input[type="birth"]{width: 65%;float: inherit;height: 32px;}
+/*p.people-name select {width: 65%;}*/
 p.photo {font-size: 14px;text-align: center;border-bottom: 1px solid #eee;padding-bottom: 10px;}
 ul.mui-table-view.mui-message img {width: 24px;}
 
@@ -141,6 +147,7 @@ ul.mui-table-view.mui-message img {width: 24px;}
 .message {display:  -webkit-box;background-color: #fff;}
 .message small {font-size: 12px;line-height: 40px;}
 .mui-table-view .mui-media-message.mui-pull-left {margin-right: 10px;margin-top: 5px;}
+p.kehu {margin-bottom: 0px;}
 
 /*基本信息*/
 span.xingbie {margin-left: 20px;color: #fff;}
@@ -158,7 +165,7 @@ ul.mui-table-view.mui-message,ul.mui-table-view.mui-table-view-chevron,ul.mui-ta
 small.one,small.name {float: right;}
 small.distance {color: #ffa935;}
 input[type="new"] {width: 62%;float: right;height: 32px;/*border: 1px solid #8f8f94;border-radius: initial;*/}
-input[type="date"] {width: 100%;height: 32px;float: inherit;/*border: 1px solid #8f8f94;border-radius: initial;*/}
+input[type="date"] {width: 58%;height: 32px;float: inherit;/*border: 1px solid #8f8f94;border-radius: initial;*/}
 button.miu-comment { float: right;margin-top: -50px;}
 .kit-item-comment p {font-weight: bold;}
 p.mui-subject {font-weight: bold; border-bottom: 1px solid #eee;padding-bottom: 5px;}
@@ -177,7 +184,7 @@ p.user-star {margin-top: -15px;}
 .mui-comment-star {float: left;margin-left: 60px;margin-top: -100px;}
 .mui-comment-star p,.mui-comment-star span {font-size: 14px;}
 .mui-money p{color: #000;font-size: 14px;line-height: 18px;}
-.mui-money {float: right;margin-top: -88px;}
+.mui-money {float: right;margin-top: -93px;}
 span.work-money {font-size: 14px;color: red; line-height: 14px;}
 p.explain {font-size: 14px;}
 p.assess {border-bottom: 1px solid #eee;padding-bottom: 10px;}
@@ -191,9 +198,10 @@ a.btn-color-re.mui-icon.mui-icon-plusempty {color: #000;font-weight: bold;}
 .things{margin-left: 10px;margin-bottom: 10px;}
 .things p {font-size: 16px;font-weight: bold;margin-left: 10px;}
 li.mui-table-view-cell.mui-collapse {border-bottom: 1px solid #eee;}
+
 /*生活资料*/
 div#segmentedControl1 a {font-size: 16px;}
-span.area {float: right;}
+/*span.area {float: right;}*/
 .mui-address {margin-bottom: 10px;background-color: #fff;}
 .mui-population {background-color: #fff; }
 /*.family-information {border-bottom: 1px solid #eee;}*/
@@ -210,22 +218,24 @@ ul.mui-table-view.mui-chevron{background-color: #fff;}
 ul.mui-table-view.mui-notice {background-color: #fff;}
 input[type="living"] { width: 14%;float: initial;height: 32px;}
 select#select_k2 {width: 45%; height: 32px;}
-select#details {width: 32%;height:32px;}
+select#details {width: 32.3%;height:32px;}
 input[type="details"] {width: 100%; height: 32px;}
 button.mui-btn-address {color: #fff;border: 1px solid #ffa935;background-color: #ffa935; display: block;margin: 30px auto;padding: 5px 10px; float: none;width: 80%;text-align: center;}
 input[type="area"] ,input[type="height"]{ width: 20%;float: inherit;}
 small.height {margin-left: 12px;}
 .saloon {background-color: #fff;margin-left: 10px; margin-right: 10px;border-radius: 5px;margin-bottom: 10px;}
 .mui-wrap-k a ,.mui-wrap-o a{color: #000; margin-top: -26px;}
+.mui-wrap-s a {color: #000; margin-top: -18px;}
 .mui-wrap-k {border-bottom: 1px solid #eee;}
+.mui-wrap-tt {border-bottom: 1px solid #eee;}
 a.btn-color-w.mui-icon.mui-icon-plusempty.mui-pull-right {font-weight: bold;}
 
 /*客户拜访*/
 p.picture {font-size: 14px;color: #ffa935;}
 p.picture img {width: 58px;}
-.title-o p { white-space: initial;line-height: 30px;}
+.title-o p ,.title-k p { white-space: initial;line-height: 30px;}
 .title-t,.title-o {border-bottom: 1px solid #eee;}
-.title-t span,.title-o span {line-height: 20px;}
+.title-t span,.title-o span,.title-k span  {line-height: 20px;}
 .feedback .image-list {background-size: cover;overflow: hidden;margin-top: -5px;}
 .feedback .image-item.space {border: none;}
 .feedback .image-item {width: 65px;height: 65px;background-size: 100% 100%;display: inline-block;position: relative;border-radius: 5px;margin-right: 10px;margin-bottom: 10px;border: solid 1px #e8e8e8;vertical-align: top;}
@@ -236,4 +246,21 @@ p.sy small {font-size: 14px;color: #ffa935}
 p.sy {font-size: 14px;margin-left: 85px;margin-top: -37px;}
 input[type="people-mianji"] {width: 75%;height: 32px;float: inherit;}
 input[type="people-village"] {width: 50%;float: inherit;height: 32px;}
-label {margin-right: 22px;}
+label {margin-right: 24px;}
+input.people-name {width: 62%;float: inherit;height: 32px;border: 1px solid #aaa; border-radius: inherit;}
+input.people-much {width: 55%;float: inherit;height: 32px;border: 1px solid #aaa;border-radius: inherit;}
+input.people-dz {width: 100%;float: left;height: 32px;border: 1px solid #aaa;border-radius: inherit;}
+input.people-rzl {width: 55%;float: inherit;height: 32px;border: 1px solid #aaa;border-radius: inherit;}
+input.people-mj {width: 38%;float: inherit;height: 32px;border: 1px solid #aaa; border-radius: inherit;}
+p.life {margin-bottom: 0px;}
+a.more {color: #fff;}
+
+
+
+
+
+
+
+
+
+

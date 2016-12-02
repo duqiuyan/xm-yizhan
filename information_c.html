@@ -17,12 +17,46 @@
        if (restore) selObj.selectedIndex=0;
        }
     </script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-wrap-o input{
+            width: 86%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-wrap-o input{
+            width: 82%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-wrap-o input{
+            width: 73%;
+        }
+    }
+
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-wrap-o input{
+            width: 70%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-wrap-o input{
+            width: 67%;
+        }
+    }
+    </style>
 </head>
 <body>
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">空调</h1>
+        <h1 class="mui-title">添加人文信息</h1>
         <a class="btn-color mui-pull-right" href="">保存</a>
     </header>
 
@@ -35,15 +69,17 @@
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap-o">
-                                    <p class="years">品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌：
-                                        <select name="select" id="select_k1" class="">
-                                            <option value="选择品牌">请选择</option>
-                                            <option value="选择品牌1">选择类型1</option>
-                                            <option value="选择品牌2">选择类型2</option>
-                                        </select>
+                                    <p class="years"><span style="color:red">*</span>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：
+                                        <input type="people-name" name="people-name" value="">
                                     </p>
-                                    <p class="higher-type">使用年限：
-                                        <input type="name" name="name" value=""><span class="danwei">年</span> 
+                                    <p class="years"><span style="color:red">*</span>联系电话：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="years"><span style="color:red">*</span>管理设施：
+                                        <input type="people-name" name="people-name" value="">
+                                    </p>
+                                    <p class="years"><span style="color:red">*</span>职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp位：
+                                        <input type="people-name" name="people-name" value="">
                                     </p>
                                 </div>
                             </li>
@@ -52,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>   
     <script>
         mui.init({
             swipeBack: false

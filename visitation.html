@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -12,10 +11,8 @@
     <link rel="stylesheet" href="css/index.main.css">
     <!--加载js文件-->
     <script src="js/mui.min.js"></script>
-
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -36,21 +33,18 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-live" class="mui-control-content mui-active">
             <div id="segmentedControl1" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <a class="mui-control-item mui-active" href="#fxItemView1">全部</a>
                 <a class="mui-control-item" href="#fxItemView2">今日待访</a>
                 <a class="mui-control-item" href="#fxItemView3">已拜访</a>
             </div>
-
             <div class="top-sch-box flex-col">
                 <div class="centerflex">
                     <i class="fdj iconfont mui-icon mui-icon-search"></i>
                     <input type="text" name="" id="" value="" class="sch-txt" placeholder="搜索">
                 </div>
             </div>
-
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -76,11 +70,9 @@
                                     </div>
                                 </a>
                             </li>
-
                             <div class='mui-time-icon'><img src="images/time.png" alt="">
                                 <small>2015-12-12</small>
                             </div>
-
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <a class="" href="visit_details.html">
                                 <!--文字信息-->
@@ -102,14 +94,12 @@
                         </ul>
                     </div>
                 </div>
-
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">
+                    <a href="" class="more">
                         查看更多
                     </a>
                 </button>
             </div>
-
             <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -117,7 +107,6 @@
                             <div class='mui-time-icon'><img src="images/time.png" alt="">
                                 <small>2015-12-13</small>
                             </div>
-
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <a class="" href="visit_details_a.html">
                                 <!--文字信息-->
@@ -136,11 +125,9 @@
                                     </div>
                                 </a>
                             </li>
-
                             <div class='mui-time-icon'><img src="images/time.png" alt="">
                                 <small>2015-12-12</small>
                             </div>
-
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <a class="" href="visit_details_a.html">
                                 <!--文字信息-->
@@ -162,14 +149,12 @@
                         </ul>
                     </div>
                 </div>
-
                 <button type="button" class="mui-btn-yellow">
-                    <a href="visit_details_b.html">
+                    <a href="visit_details_b.html" class="more">
                         新增拜访
                     </a>
                 </button>
             </div>
-
             <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
@@ -177,7 +162,6 @@
                             <div class='mui-time-icon'><img src="images/time.png" alt="">
                                 <small>2015-12-13</small>
                             </div>
-
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <a class="" href="visit_details.html">
                                 <!--文字信息-->
@@ -198,11 +182,9 @@
                                     </div>
                                 </a>
                             </li>
-
                             <div class='mui-time-icon'><img src="images/time.png" alt="">
                                 <small>2015-12-12</small>
-                            </div>
-                            
+                            </div>                            
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <a class="" href="visit_details.html">
                                 <!--文字信息-->
@@ -227,14 +209,13 @@
                     </div>
                 </div>
                 <button type="button" class="mui-btn-yellow">
-                    <a href="">
+                    <a href="" class="more">
                         查看更多
                     </a>
                 </button>
             </div>
         </div>
     </div>
-
     <script>
         mui.init({
             swipeBack: false
@@ -258,6 +239,5 @@
         }); 
 
     </script>
-
 </body>
 </html>

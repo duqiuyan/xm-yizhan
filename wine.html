@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>驿站管理系统</title>
-
     <!--移动web配置-->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <!--加载样式-->
@@ -18,10 +17,42 @@
        if (restore) selObj.selectedIndex=0;
        }
     </script>
+    <style type="text/css">
+    /*尺寸适配1280*/
+    @media screen and (max-width: 1280px){
+        .mui-scroll .mui-wrap-o select{
+            width: 84%;
+        }
+    }
+    /*苹果6p尺寸适配414x736*/
+    @media screen and (max-width: 736px){
+        .mui-scroll .mui-wrap-o select{
+            width: 84%;
+        }
+    }
+    /*尺寸适配384x567*/
+    @media screen and (max-width: 567px){
+        .mui-scroll .mui-wrap-o select{
+            width: 75%;
+        }
+    }
 
+    /*苹果6/6s尺寸适配 375x667*/
+    @media screen and (max-width: 375px){
+        .mui-scroll .mui-wrap-o select{
+            width: 73%;
+        }
+    }
+
+   /*苹果4尺寸适配320x480  5s尺寸 320x568 */
+    @media screen and (max-width: 320px){
+        .mui-scroll .mui-wrap-o select{
+            width: 69%;
+        }
+    }
+    </style>
 </head>
 <body>
-
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
@@ -31,7 +62,6 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
         <div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
@@ -39,14 +69,14 @@
                         <ul class="mui-table-view">
                             <li class="kitchen-item mui-table-view-cell mui-media">
                                 <div class="mui-wrap-o">
-                                    <p class="years">品牌：
+                                    <p class="years">品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
                                             <option value="选择品牌2">选择类型2</option>
                                         </select>
                                     </p>
-                                    <p class="years">类型：
+                                    <p class="years">类&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp型：
                                         <select name="select" id="select_k1" class="">
                                             <option value="选择品牌">请选择</option>
                                             <option value="选择品牌1">选择类型1</option>
